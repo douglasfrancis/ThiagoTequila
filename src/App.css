@@ -2,6 +2,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: GreenGrove;
+  src: url(./fonts/GreenGroveLight.otf);
+  font-display: fallback;
+}
+
+#motto{
+  font-family: GreenGrove;
+  font-weight: 200;
+  border: 2px solid white;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h1{
+  font-family: GreenGrove;
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
+.product-title{
+  font-family: GreenGrove;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -53,10 +82,11 @@ nav{
 }
 
 #section2{
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
   background-color:  rgb(18,18,18);
   padding: 2rem;
+  color: white;
   
 }
 
@@ -165,3 +195,45 @@ input {
   height: 30px;
 }
 
+.unclicked{
+  height: 400px;
+  transition: 0.4s;
+  margin: 0 2rem;
+}
+
+.clicked{
+  height: 400px;
+  transform:scale(1.2);
+  transition: 0.4s;
+
+}
+
+.clicked p{
+  margin: unset;
+}
+
+.clicked:hover, .unclicked:hover{
+  cursor: pointer;
+}
+
+.more-product-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  height: 400px;
+  width: 90vw;
+}
+.more-product-desc{
+  width:60%;
+  text-align: left;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+  padding-top: 4rem;
+}
+
+.product-info-title{
+  font-family: 'GreenGrove';
+  font-size: 4rem;
+  text-transform: uppercase;
+}
