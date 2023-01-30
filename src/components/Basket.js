@@ -21,7 +21,7 @@ export default function Basket({basketOpen, setBasketOpen}) {
   return (
         <div id="mySidenav" className={basketOpen ? 'sidenav-open' : 'sidenav'}>
 
-            <button className="closebtn" onClick={closeNav}>x</button>
+            <button className="closebtn" onClick={closeNav}>Close</button>
             
             <h1>Store coming soon</h1>
 

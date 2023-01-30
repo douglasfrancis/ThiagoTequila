@@ -2,7 +2,7 @@ video{
     height: 90vh;
     width: 100vw;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
 }
 
 #vid-container{

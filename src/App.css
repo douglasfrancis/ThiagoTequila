@@ -45,6 +45,13 @@ nav{
   
 }
 
+#home-products{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #section2{
   height: 80vh;
   width: 100vw;

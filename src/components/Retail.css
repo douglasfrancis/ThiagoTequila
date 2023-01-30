@@ -6,13 +6,15 @@
     align-items: center;
     justify-content: center;
     padding-top: 4rem;
+    position: relative;
 }
 
 #retail-container{
     width: 700px;
     max-width: 90vw;
     height: 500px;
-    background-color: rgba(18,18,18,0.8);
+    z-index: 998;
+
 }
 
 form{
@@ -21,4 +23,36 @@ form{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+#overlay{
+    background-color: rgba(18,18,18,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 997;
+}
+
+.submit-btn{
+    background-color: unset;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.retail-input{
+    border: 2px solid white;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+
+}
+.retail-input::placeholder{
+color: white;
+font-weight: bold;
+font-size: 16px;
 }
