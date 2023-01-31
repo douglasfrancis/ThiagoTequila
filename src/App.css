@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(18,18,18);
+}
+
 @font-face {
   font-family: GreenGrove;
   src: url(./fonts/GreenGroveLight.otf);
@@ -100,14 +104,11 @@ nav{
 }
 
 .logo1{
-
   transition: 1s;
   filter: brightness(0) invert(1);
   height: 100px !important;
   left: calc(50vw - 40px);
-
 }
-
 
 #logo{
   position: absolute;
@@ -139,6 +140,32 @@ nav{
   margin: 0 1rem;
 }
 
+.scroll-visible{
+  opacity: 1;
+  transition: 0.5s;
+  text-transform: uppercase;
+ 
+}
+
+.scroll{
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  text-transform: uppercase;
+  left: 45%;
+  bottom: 2rem;
+}
+
+#scroll-container{
+  position: absolute;
+  bottom: 1rem;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .background{
   position: relative;
@@ -270,9 +297,54 @@ input {
   -webkit-transform: translate(0, -10px) rotate(45deg);
   -ms-transform: translate(0, -10px) rotate(45deg);
   transform: translate(0, -10px) rotate(45deg);
+}
 
+.arrow{
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  transform:rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+  
+.arrow:before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+  
+  
+@keyframes arrow{
+  0%{
+    opacity: 1
+  }
+ 
+100%{
+  opacity: 0;
+  transform: translate(-10px, -10px)
 
 }
+  
+}
+ 
+  
+  
+  
 
 @media only screen and (max-width: 850px) {
   #nav-items {

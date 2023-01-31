@@ -13,24 +13,22 @@ function App() {
   const [basketOpen, setBasketOpen] = useState(false)
   const [clicked, setClicked] = useState(false)
   const [open, setOpen] = useState(false)
-  
-  window.onscroll = function() {
-    var nav = document.getElementById('nav');
-    var logo = document.getElementById('logo');
 
-    if ( window.pageYOffset > 10 ) {
-        setScrolled(true)
 
-        nav.classList.add("navbar1");
-        logo.classList.add("logo1");
-    } else {
-        setScrolled(false)
-        nav.classList.remove("navbar1");
-        logo.classList.remove("logo1");
-    }
-}
+window.addEventListener("scroll", function(e){
+  var nav = document.getElementById('nav');
+  var logo = document.getElementById('logo');
 
-  
+  if ( window.pageYOffset > 10 ) {
+      setScrolled(true)
+
+      nav.classList.add("navbar1");
+      logo.classList.add("logo1");
+  } else {
+      setScrolled(false)
+      nav.classList.remove("navbar1");
+      logo.classList.remove("logo1");
+  }});
 
   return (
     <div className="App">
