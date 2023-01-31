@@ -11,7 +11,9 @@ function App() {
 
   const [scrolled, setScrolled] = useState(false)
   const [basketOpen, setBasketOpen] = useState(false)
-
+  const [clicked, setClicked] = useState(false)
+  const [open, setOpen] = useState(false)
+  
   window.onscroll = function() {
     var nav = document.getElementById('nav');
     var logo = document.getElementById('logo');
@@ -34,7 +36,12 @@ function App() {
     <div className="App">
       <header className="App-header">
        <nav id='nav'>
-         <div>
+          <div className={clicked ? 'container change' : 'container'} onClick={()=>{ setClicked(!clicked); setOpen(!open)}}>
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
+          </div>
+         <div id='nav-items'>
             <Link to='/products' className={scrolled? 'nav-item1' :'nav-item'} >Products</Link>
             <Link to='/our-story' className={scrolled? 'nav-item1' :'nav-item'} >Our Story</Link>
             <Link to='/retail' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
