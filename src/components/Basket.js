@@ -21,16 +21,16 @@ export default function Basket({basketOpen, setBasketOpen}) {
   return (
         <div id="mySidenav" className={basketOpen ? 'sidenav-open' : 'sidenav'}>
 
-            <button className="closebtn" onClick={closeNav}>Close</button>
+            <button className="closebtn" onClick={closeNav}>X</button>
             
             <h1>Store coming soon</h1>
 
           <div>
-            <p>Sign up to our mailing list so we can keep you posted</p>
+            <p style={{fontFamily:'Garamond'}}>Sign up to our mailing list so we can keep you posted</p>
 
-            <input id='basket-input' placeholder='Email Addres'/>
+            <input id='basket-input' placeholder='Email Address'/>
 
-            <button>Subscribe</button>
+            <button className='subscribe-btn'>Subscribe</button>
           </div>
             
         </div>
