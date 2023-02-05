@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     position: relative;
 }
 
@@ -18,10 +18,12 @@
     padding-top: 5rem;
 }
 
-#retail-info{
-    font-size: 16px;
-    font-family: Garamond;
-}
+#retail-info, .step{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: Gotham;
+font-weight: bold;}
 
 #steps{
     text-align: left;

@@ -36,25 +36,29 @@ window.addEventListener("scroll", function(e){
 
        <nav id='nav' >
 
-          <div className={open ? 'change' : 'container'}  onClick={()=>{  setOpen(!open)}}>
+          <div className={open ? 'change' : 'container'}  onClick={()=>{  setOpen(!open)}} >
               <div className="bar1"></div>
               <div className="bar2"></div>
               <div className="bar3"></div>
           </div>
 
-         <div id='nav-items'>
+         <div id='nav-items' >
             <Link to='/products' className={scrolled? 'nav-item1' :'nav-item'} >Products</Link>
             <Link to='/our-story' className={scrolled? 'nav-item1' :'nav-item'} >Our Story</Link>
             <Link to='/retail' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
          </div>
 
-        <Link to='/' style={{width: '100vw', position:'absolute', left: 0}}>
+         <Link to='/' id='logo-container' >
          <img id='logo' src={logo} alt='Thiago logo' />
         </Link>
 
-         <img id='cart' src={cart} alt='Shopping cart' onClick={()=>setBasketOpen(true)} />
+        <div >
+          <img id='cart' src={cart} alt='Shopping cart' onClick={()=>setBasketOpen(true)}  />
+        </div>
         
        </nav>
+
+       
       </header>
 
       <Basket basketOpen={basketOpen} setBasketOpen={setBasketOpen} />

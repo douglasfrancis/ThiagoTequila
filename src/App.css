@@ -16,6 +16,12 @@ html{
   font-display: fallback;
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url(./fonts/Gotham-Thin.otf);
+  font-display: fallback;
+}
+
 
 
 #motto{
@@ -56,7 +62,7 @@ nav{
   width: 100vw;
   box-sizing: border-box;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   padding: 1rem;
   align-items: center;
   height: 50px;
@@ -106,6 +112,13 @@ nav{
   flex-direction: column;
 }
 
+#section2 p{
+  font-family: Gotham;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
 .navbar1{
   background-color:  rgb(18,18,18, 0.8);
   transition: 1s;
@@ -128,6 +141,11 @@ nav{
   filter: brightness(0) invert(1);
   height: 175px;
   transition: 1s;
+  margin: 0 auto;
+}
+
+#logo-container{
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -292,7 +310,10 @@ input {
 
 .container {
   display: none;
+}
 
+.change{
+  width: 33%;
 }
 
 
@@ -430,12 +451,17 @@ input {
     z-index: 999;
   }
   #scroll-container{
-    bottom: 100px;
+    bottom: 120px;
   }
   #desktop{
     display: none;
   }
   #mobile{
     display: block;
+  }
+
+  #section2 p{
+    
+    line-height: 20px;
   }
 }
