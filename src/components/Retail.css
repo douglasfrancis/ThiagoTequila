@@ -45,7 +45,7 @@ form{
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 997;
+    z-index: 9;
 }
 
 .submit-btn{
