@@ -21,8 +21,8 @@ export default function Section1() {
           <h1 id='motto'>Savour the Spirit of Exquisite Craftsmanship</h1>
 
           <div id='scroll-container'>
-            <p id='scroll' className={scroll? 'scroll':'scroll-visible'}>Scroll To Explore</p>
-
+           {//<p id='scroll' className={scroll? 'scroll':'scroll-visible'}>Scroll To Explore</p>
+            }
             <div className="arrow"></div>
           </div>
 

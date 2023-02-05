@@ -10,7 +10,7 @@ export default function Retail() {
       </div>
 
       <div id='retail-container'>
-      <p >Take control of your wholesale buying experience by registering for an account. By filling out our simple and quick form, you will gain access to exclusive features, benefits, custom pricing options and more. Our team will get in touch to set up your account and ensure a seamless experience. Start now and experience the difference for yourself.</p>
+      <p id='retail-info'>Take control of your wholesale buying experience by registering for an account. By filling out our simple and quick form, you will gain access to exclusive features, benefits, custom pricing options and more. Our team will get in touch to set up your account and ensure a seamless experience. Start now and experience the difference for yourself.</p>
 
         <div id='steps'>
           <p>Step 1. Register for an account</p>

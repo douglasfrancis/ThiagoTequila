@@ -24,7 +24,8 @@ video{
 
   #arandas{
       transform: rotate(-8deg);
-      height: 500px;
+      max-height: 500px;
+      height: 50vw;
   }
 
   #arandas-marker{
