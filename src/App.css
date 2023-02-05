@@ -90,12 +90,15 @@ nav{
 }
 
 #section2{
-  min-height: 80vh;
   width: 100vw;
   background-color:  rgb(18,18,18);
   padding: 2rem;
   color: white;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar1{
@@ -108,20 +111,28 @@ nav{
   transition: 1s;
   filter: brightness(0) invert(1);
   height: 100px !important;
-  left: calc(50vw - 40px);
   z-index: 997;
-
+  margin: 0 auto;
+  position: relative;
+  top: 0px !important;
 }
 
 #logo{
-  position: absolute;
+  position: relative;
+  top: 4rem;
   filter: brightness(0) invert(1);
-  left: calc(50vw - 70px);
-  top: 0;
   height: 175px;
   transition: 1s;
+  margin: 0 auto;
 }
 
+#nav-items{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
 .nav-item{
   font-weight: bold;
   text-transform: uppercase;
@@ -139,7 +150,7 @@ nav{
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin: 0 1rem;
+  margin: 1.5rem 1rem;
 }
 
 .scroll-visible{
@@ -169,7 +180,7 @@ nav{
 
 .background{
   position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     z-index: 0;
@@ -179,7 +190,7 @@ nav{
   background: rgba(18,18,18, 0);
     background: linear-gradient(180deg, rgba(18,18,18,0) 50%, rgba(18,18,18,1) 100%);
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     z-index: 2;
@@ -277,7 +288,6 @@ input {
 
 
 .bar1, .bar2, .bar3 {
-
   width: 30px;
   height: 2px;
   background-color: white;
@@ -357,7 +367,10 @@ input {
   background-color: rgb(18,18,18); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  padding:14rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-closed{

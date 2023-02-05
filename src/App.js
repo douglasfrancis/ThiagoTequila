@@ -48,7 +48,7 @@ window.addEventListener("scroll", function(e){
             <Link to='/retail' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
          </div>
 
-        <Link to='/'>
+        <Link to='/' style={{width: '100vw'}}>
          <img id='logo' src={logo} alt='Thiago logo' />
         </Link>
 

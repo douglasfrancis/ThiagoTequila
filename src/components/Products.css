@@ -24,6 +24,7 @@
     background-color: rgba(18,18,18,0.9);
     height: auto;
     width: 300px;
+    max-width: 90vw;
     margin: 1.5rem;
     padding: 2rem;
 }
