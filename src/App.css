@@ -386,8 +386,11 @@ input {
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.nav-closed > *{
+  display: none;
+}
+
 .nav-open a{
-  padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -396,6 +399,8 @@ input {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: "GreenGrove", serif;
+    text-align: center;
+    margin: 1rem;
 } 
  
   
