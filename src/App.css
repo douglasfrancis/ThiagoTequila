@@ -56,7 +56,7 @@ nav{
   width: 100vw;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   padding: 1rem;
   align-items: center;
   height: 50px;
@@ -67,6 +67,8 @@ nav{
 
 #cart{
   height: 30px;
+  float: right;
+
 }
 
 #cart:hover{
@@ -74,7 +76,6 @@ nav{
 }
 
 .cart1{
-
   transition: 1s;
   filter: brightness(0) invert(1);
 
@@ -174,6 +175,7 @@ nav{
 #scroll-container{
   position: absolute;
   bottom: 3rem;
+  left: 0.5rem;
   width: 100vw;
   height: auto;
   display: flex;
@@ -264,14 +266,16 @@ input {
 
 .more-product-info{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   margin-top: 2rem;
-  height: 400px;
+  min-height: 400px;
   width: 90vw;
 }
 .more-product-desc{
   width:60%;
+  min-width: 300px;
   text-align: left;
   line-height: 2rem;
   font-size: 1.5rem;
@@ -407,6 +411,10 @@ input {
     text-align: center;
     margin: 1rem;
 } 
+
+#mobile{
+  display: none;
+}
  
   
   
@@ -423,5 +431,11 @@ input {
   }
   #scroll-container{
     bottom: 100px;
+  }
+  #desktop{
+    display: none;
+  }
+  #mobile{
+    display: block;
   }
 }
