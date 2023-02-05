@@ -4,6 +4,10 @@
 
 body{
   background-color: rgb(18,18,18);
+  width: 100vw;
+}
+html{
+  width: 100vw;
 }
 
 @font-face {
@@ -203,6 +207,7 @@ footer{
   min-height: 150px;
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -224,8 +229,8 @@ input {
 #footer-links{
   display: flex;
   flex-direction: row;
-  width: 50%;
-  min-width: 400px;
+  width: 500px;
+  max-width: 90vw;
   justify-content: space-evenly;
   margin: 0 auto 2rem auto;
 }
