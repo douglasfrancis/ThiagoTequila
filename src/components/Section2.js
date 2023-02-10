@@ -4,7 +4,8 @@ import reposado from '../Images/reposado_shadow.png'
 import cherry from '../Images/cherry_shadow.png'
 import vanilla from '../Images/vanilla_shadow.png'
 import spiced from '../Images/spiced_shadow.png'
-
+import transparent from '../Images/logo_transparent.png'
+import './Section2.css'
 
 export default function Section2() {
   const [clicked, setClicked] = useState('Cherry')
@@ -12,6 +13,8 @@ export default function Section2() {
   return (
     <div id='section2'>
       <h1 style={{color:'white', marginBottom: '4rem'}}>Products</h1>
+
+      <img id='transparent' src={transparent} alt='Transparent Logo'/>
 
       <div id='desktop'>
           <div id='home-products'>

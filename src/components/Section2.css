@@ -1,0 +1,103 @@
+#section2{
+    width: 100vw;
+    background-color:  rgb(18,18,18);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  #section2 p{
+    font-family: Gotham;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+.unclicked{
+    height: 500px;
+    transition: 0.4s;
+    margin: 0 1rem;
+    z-index: 500;
+  }
+  
+  .clicked{
+    height: 500px;
+    transform:scale(1.2);
+    transition: 0.4s;
+    z-index: 501;
+    margin: 0 1rem ;
+  }
+  
+  .clicked p{
+    margin: unset;
+  }
+  
+  .clicked:hover, .unclicked:hover{
+    cursor: pointer;
+  }
+  
+  .more-product-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: top;
+    min-height: 400px;
+    width: 90vw;
+  }
+  .more-product-desc{
+    width:60%;
+    min-width: 300px;
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: Garamond;
+  }
+  
+  .product-info-title{
+    font-family: 'GreenGrove';
+    font-size: 4rem;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  #transparent{
+      height: 550px;
+      position: absolute;
+      top: 0;
+  }
+
+
+@media only screen and (max-width: 850px) {
+    #nav-items {
+      display: none;
+    }
+    .container {
+      display: inline-block;
+      cursor: pointer;
+      z-index: 999;
+    }
+    #scroll-container{
+      bottom: 120px;
+    }
+    #desktop{
+      display: none;
+    }
+    #mobile{
+      display: block;
+    }
+  
+    #section2 p{
+      
+      line-height: 20px;
+    }
+
+    #transparent{
+        display: none;
+    }
+  }
