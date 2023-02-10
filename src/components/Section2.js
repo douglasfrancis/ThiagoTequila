@@ -1,10 +1,13 @@
 import React, { useState} from 'react'
-import white from '../Images/white.png'
-import anejo from '../Images/anejo.png'
-import reposado from '../Images/reposado.png'
+import blanco from '../Images/blanco_shadow.png'
+import reposado from '../Images/reposado_shadow.png'
+import cherry from '../Images/cherry_shadow.png'
+import vanilla from '../Images/vanilla_shadow.png'
+import spiced from '../Images/spiced_shadow.png'
+
 
 export default function Section2() {
-  const [clicked, setClicked] = useState('Reposado')
+  const [clicked, setClicked] = useState('Cherry')
 
   return (
     <div id='section2'>
@@ -13,11 +16,12 @@ export default function Section2() {
       <div id='desktop'>
           <div id='home-products'>
           
-          <img className={clicked === "Blanco"? "clicked": "unclicked"}  src={white} alt='white' onClick={()=>setClicked("Blanco")}/>
-      
-          <img className={clicked === "Reposado"? "clicked": "unclicked"} src={reposado} alt='white' onClick={()=>setClicked("Reposado")}/>
-      
-          <img className={clicked === "Anejo"? "clicked": "unclicked"} src={anejo} alt='white' onClick={()=>setClicked("Anejo")}/>
+          <img className={clicked === "Blanco"? "clicked": "unclicked"} style={{marginRight:0}} src={blanco} alt='Blanco' onClick={()=>setClicked("Blanco")}/>
+          <img className={clicked === "Reposado"? "clicked": "unclicked"} style={{marginRight:0}} src={reposado} alt='Reposado' onClick={()=>setClicked("Reposado")}/>
+          <img className={clicked === "Cherry"? "clicked": "unclicked"} src={cherry} alt='Black Cherry' onClick={()=>setClicked("Cherry")}/>
+          <img className={clicked === "Vanilla"? "clicked": "unclicked"} style={{marginLeft:0}} src={vanilla} alt='Vanilla' onClick={()=>setClicked("Vanilla")}/>
+          <img className={clicked === "Spiced"? "clicked": "unclicked"} style={{marginLeft:0}} src={spiced} alt='Spiced' onClick={()=>setClicked("Spiced")}/>
+
         
           </div>
 
@@ -26,7 +30,9 @@ export default function Section2() {
           <div style={{width:'40%', height: 200}} >
             {clicked=== 'Blanco' && <h2 className='product-info-title'>Blanco</h2>}
             {clicked=== 'Reposado' && <h2 className='product-info-title'>Reposado</h2>}
-            {clicked=== 'Anejo' && <h2 className='product-info-title'>Anejo</h2>}
+            {clicked=== 'Cherry' && <h2 className='product-info-title'>Black Cherry</h2>}
+            {clicked=== 'Vanilla' && <h2 className='product-info-title'>Vanilla</h2>}
+            {clicked=== 'Spiced' && <h2 className='product-info-title'>Spiced</h2>}
 
             <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
           </div>
@@ -44,13 +50,27 @@ export default function Section2() {
             Every sip reveals the intricacies of the aging process, with a smooth finish that leaves a lasting impression. 
             It is perfect for sipping neat or in a classic cocktail, making it a top choice for tequila connoisseurs.
             Experience the luxury of premium reposado tequila, with every sip.</p>}
-          {clicked== 'Anejo' && 
+          {clicked== 'Cherry' && 
+          <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
+            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
+            This tequila is perfect for sipping straight or in a luxurious cocktail. 
+            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
+            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
+            {clicked== 'Vanilla' && 
+          <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
+            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
+            This tequila is perfect for sipping straight or in a luxurious cocktail. 
+            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
+            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
+            {clicked== 'Spiced' && 
           <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
             Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
             This tequila is perfect for sipping straight or in a luxurious cocktail. 
             It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
             Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
           </div>
+
+          <p style={{fontSize: '0.8rem', margin:'0 auto'}}><i>Images used for illustrative purposes only. Label and bottle design may vary.</i></p>
 
           </div>
 
@@ -61,7 +81,7 @@ export default function Section2() {
 
       <div id='mobile'>
 
-            <img className="unclicked"  src={white} alt='white' />
+            <img className="unclicked"   src={blanco} alt='Blanco' />
             <h2 className='product-info-title'>Blanco</h2>
             <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
             <p>Introducing our premium Blanco tequila, crafted with the finest blue agave and distilled to perfection.
@@ -79,8 +99,26 @@ export default function Section2() {
             It is perfect for sipping neat or in a classic cocktail, making it a top choice for tequila connoisseurs.
             Experience the luxury of premium reposado tequila, with every sip.</p>
 
-            <img className="unclicked"  src={anejo} alt='Anejo' />
-            <h2 className='product-info-title'>Anejo</h2>
+            <img className="unclicked"  src={cherry} alt='Black Cherry' />
+            <h2 className='product-info-title'>Black Cherry</h2>
+            <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
+            <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
+            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
+            This tequila is perfect for sipping straight or in a luxurious cocktail. 
+            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
+            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>
+
+            <img className="unclicked"  src={vanilla} alt='Vanilla' />
+            <h2 className='product-info-title'>Vanilla</h2>
+            <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
+            <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
+            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
+            This tequila is perfect for sipping straight or in a luxurious cocktail. 
+            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
+            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>
+
+            <img className="unclicked"  src={spiced} alt='Spiced' />
+            <h2 className='product-info-title'>Spiced</h2>
             <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
             <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
             Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
