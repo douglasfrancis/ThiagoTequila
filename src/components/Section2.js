@@ -13,20 +13,20 @@ export default function Section2() {
       <div id='desktop'>
           <div id='home-products'>
           
-          <img className={clicked == "Blanco"? "clicked": "unclicked"}  src={white} alt='white' onClick={()=>setClicked("Blanco")}/>
+          <img className={clicked === "Blanco"? "clicked": "unclicked"}  src={white} alt='white' onClick={()=>setClicked("Blanco")}/>
       
-          <img className={clicked == "Reposado"? "clicked": "unclicked"} src={reposado} alt='white' onClick={()=>setClicked("Reposado")}/>
+          <img className={clicked === "Reposado"? "clicked": "unclicked"} src={reposado} alt='white' onClick={()=>setClicked("Reposado")}/>
       
-          <img className={clicked == "Anejo"? "clicked": "unclicked"} src={anejo} alt='white' onClick={()=>setClicked("Anejo")}/>
+          <img className={clicked === "Anejo"? "clicked": "unclicked"} src={anejo} alt='white' onClick={()=>setClicked("Anejo")}/>
         
           </div>
 
         <div className='more-product-info'>
 
           <div style={{width:'40%', height: 200}} >
-            {clicked== 'Blanco' && <h2 className='product-info-title'>Blanco</h2>}
-            {clicked== 'Reposado' && <h2 className='product-info-title'>Reposado</h2>}
-            {clicked== 'Anejo' && <h2 className='product-info-title'>Anejo</h2>}
+            {clicked=== 'Blanco' && <h2 className='product-info-title'>Blanco</h2>}
+            {clicked=== 'Reposado' && <h2 className='product-info-title'>Reposado</h2>}
+            {clicked=== 'Anejo' && <h2 className='product-info-title'>Anejo</h2>}
 
             <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
           </div>
