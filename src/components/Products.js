@@ -19,6 +19,8 @@ export default function Products() {
   ]
   return (
     <main id='product-page'>
+            <div className='gradient'/>
+
       <div id='products-container'>
           {list.map((item, i)=>{
             return <Product item={item} key={i} />

@@ -7,8 +7,8 @@ export default function OurStory() {
   return (
     <main>
         <div id="vid-container">
-                <div className="gradient">
-                </div>
+                <div className="full-gradient" />
+                
 
                 <video autoPlay muted loop playsInline>
                     <source src={video} type="video/mp4" />
@@ -16,15 +16,24 @@ export default function OurStory() {
                 </video>
         </div>
 
-        <div id='arandas-container' >
+        <div id='process'>
+        <div className="gradient" />
 
-            <img id='arandas' src={arandas} alt='arandas' />
 
-            <div >
-                <h2>Finding the best source</h2>
-                <p></p>
-            </div>
         </div>
+
+        <div id='origins'>
+        <div className="gradient" />
+
+
+        </div>
+
+        <div id='journey'>
+        <div className="full-gradient" />
+
+
+        </div>
+
     </main>
   )
 }

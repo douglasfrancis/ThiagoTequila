@@ -16,7 +16,7 @@ export default function Section1() {
   return (
     <div id='section1'>
 
-        <div className='gradient' style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
+        <div className='full-gradient' style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
 
           <h1 id='motto'>Savour the Spirit of Exquisite Craftsmanship</h1>
 
