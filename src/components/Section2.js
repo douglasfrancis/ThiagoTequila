@@ -54,23 +54,27 @@ export default function Section2() {
             It is perfect for sipping neat or in a classic cocktail, making it a top choice for tequila connoisseurs.
             Experience the luxury of premium reposado tequila, with every sip.</p>}
           {clicked== 'Cherry' && 
-          <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
-            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
-            This tequila is perfect for sipping straight or in a luxurious cocktail. 
-            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
-            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
+          <p>Introducing Black Cherry Premium Tequila, a unique blend of premium tequila and the rich, sweet flavour of ripe black cherries. 
+            This one-of-a-kind spirit is perfect for sipping straight or mixing into your favourite cocktails. 
+            Each bottle is handcrafted using only the finest blue agave and expertly infused with the essence of juicy black cherries, resulting in a smooth and delicious taste that is sure to satisfy. 
+            The deep, dark color of the tequila perfectly complements the bright, juicy notes of the cherries, making this a visually stunning spirit as well.
+             Whether you're a tequila aficionado or simply love the taste of black cherries, Black Cherry Premium Tequila is a must-try for anyone looking for a truly exceptional drinking experience. 
+             So why wait? Order your bottle today and discover the delicious difference of Black Cherry Premium Tequila.</p>}
             {clicked== 'Vanilla' && 
-          <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
-            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
-            This tequila is perfect for sipping straight or in a luxurious cocktail. 
-            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
-            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
+          <p>A perfect blend of rich vanilla flavour and premium tequila. Crafted from 100% pure blue agave and distilled to perfection, our tequila is rich in flavour and smooth on the palate. 
+            The perfect balance of sweetness and smoothness, this tequila is perfect for sipping on its own, or mixing into your favourite cocktails. 
+            Whether you're a fan of classic margaritas or looking for something new, this tequila is a must-try. 
+            Experience the rich, velvety flavour of vanilla with every sip, making this tequila the perfect addition to your bar collection. 
+            Perfect for sipping on a warm summer day, or enjoying with friends and family on special occasions, our Vanilla Premium Tequila is the choice for any tequila lover. 
+            So why wait? Grab a bottle today and taste the difference!</p>}
             {clicked== 'Spiced' && 
-          <p>Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. 
-            Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. 
-            This tequila is perfect for sipping straight or in a luxurious cocktail. 
-            It's made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. 
-            Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience.</p>}
+          <p>Introducing our spiced premium tequila, the perfect blend of traditional Mexican tequila and bold, aromatic spices. 
+            Distilled from 100% blue agave, this tequila is carefully crafted to provide a smooth and delicious sipping experience.
+          The distinct spices used in our spiced tequila add a depth of flavour that is unmatched by traditional tequilas. 
+          Notes of cinnamon, nutmeg, and clove meld perfectly with the natural sweetness of the agave, creating a unique and irresistible taste. 
+          Whether sipping on the rocks or mixed into a cocktail, this tequila will add a touch of excitement to any drink.
+          It's the perfect addition to any home bar. So why settle for a bland, basic tequila when you can have a premium spiced tequila that will take your drinking experience to the next level? 
+          Try it today and taste the difference.</p>}
           </div>
 
           <p style={{fontSize: '0.8rem', margin:'0 auto'}}><i>Images used for illustrative purposes only. Label and bottle design may vary.</i></p>

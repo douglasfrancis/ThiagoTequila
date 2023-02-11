@@ -18,7 +18,7 @@ html{
 
 @font-face {
   font-family: Gotham;
-  src: url(./fonts/Gotham-Thin.otf);
+  src: url(./fonts/Gotham-Light.otf);
   font-display: fallback;
 }
 
@@ -27,7 +27,7 @@ html{
 #motto{
   font-family: GreenGrove;
   font-weight: 200;
-  border: 2px solid white;
+  border: 3px solid white;
   padding: 2rem 3rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -146,6 +146,8 @@ nav{
   font-size: 0.8rem;
   margin: 0 1rem;
   transition: 1s;
+  font-family: Gotham;
+  text-decoration: none;
 
 }
 
@@ -157,6 +159,11 @@ nav{
   text-transform: uppercase;
   font-size: 0.8rem;
   margin: 1.5rem 1rem;
+  font-family: Gotham;
+  text-decoration: none;
+}
+.nav-item:hover, .nav-item1:hover{
+  text-decoration: underline;
 }
 
 .scroll-visible{
@@ -213,6 +220,7 @@ footer{
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
+  font-family: Gotham;
 }
 
 footer > * {
@@ -377,7 +385,9 @@ input {
 }
  
   
-  
+button:hover{
+  cursor: pointer;
+}
   
 
 @media only screen and (max-width: 850px) {

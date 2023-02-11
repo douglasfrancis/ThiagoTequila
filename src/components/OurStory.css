@@ -34,61 +34,97 @@ video{
       text-align: center;
   }
 
-  #arandas{
-      transform: rotate(-8deg);
-      max-height: 500px;
-      height: 50vw;
-  }
-
-  #arandas-marker{
-    font-family: 'Permanent Marker', cursive;
-    color: white;
+  #process,#origins, #journey{
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 90vh;
     position: relative;
-    font-size: 40px;
-    left: 20px;
-    top: 20px;
-    transform: rotate(-8deg);
-    display: inline-block;
+
   }
 
-  #arandas-container{
-    min-height: 300;
-    max-width: 90vw;
-    background-color:rgb(18,18,18);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2rem;
+  #magic-of-thiago{
+    top: 60%;
+    left: 10%;
+  }
+  
+  #magic-of-thiago p{
+    margin:5px;
+    font-family: Gotham;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: bold;
+
   }
 
   #process{
     background-image: url('../Images/process.png');
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    min-height: 90vh;
-    position: relative;
+  }
 
+  #process-info{
+    top: 20%;
+    left: 10%;
   }
 
   #origins{
     background-image: url('../Images/origins.png');
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    min-height: 90vh;
-    position: relative;
+  }
+
+  #origins-info{
+    top: 60%;
+    left: 10%;
+  }
+
+  #origins-info p{
+    font-family: Gotham;
+    max-width: 70vw;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: bold;
 
   }
 
   #journey{
     background-image: url('../Images/journey.png');
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    min-height: 90vh;
-    position: relative;
+  }
 
+  #journey-info{
+    top: 10%;
+    left: 70%;
+  }
+  #journey-info p{
+    font-family: Gotham;
+    max-width: 70vw;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 25px;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+
+  #magic-of-thiago, #origins-info, #process-info, #journey-info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+  
+
+  #shop-now-btn{
+    width: 150px;
+    border: 2px solid white;
+    padding: 1rem;
+    background-color: unset;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .story-header{
+    font-family: GreenGrove;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
   }
