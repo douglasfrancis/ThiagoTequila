@@ -4,7 +4,7 @@ import instagram from '../Images/insta.png'
 export default function Footer() {
   return (
     <footer>
-        <h1>STAY UPDATED</h1>
+        <h1 style={{fontFamily: 'GreenGroveBold'}}>STAY UPDATED</h1>
 
         <input type='text' placeholder='Email address'/>
 

@@ -5,31 +5,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
     position: relative;
 }
 
 #retail-container{
-    width: 1000px;
+    width: 1200px;
     max-width: 90vw;
     height: auto;
     z-index: 995;
     color: white;
     padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#retail-info, .step{
+#retail-info{
     font-size: 1rem;
     letter-spacing: 1px;
     line-height: 25px;
     font-family: Gotham;
-font-weight: bold;}
-
-#steps{
-    text-align: left;
+    font-weight: bold;
     width: 500px;
     max-width: 90vw;
-    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+#wholesale-header{
+    font-size: 3rem;
+    text-align: left;
+    font-family: GreenGroveBold;
 }
 
 
@@ -39,10 +47,10 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 500px;
+    max-width: 90vw;
+    margin: 7rem auto 2rem auto;
+    padding: 0;
 }
 
 #overlay{
@@ -62,6 +70,7 @@ form{
     height: 50px;
     width: 200px;
     text-transform: uppercase;
+    margin-top: 1rem;
 }
 
 .retail-input{
@@ -70,6 +79,8 @@ form{
     color: white;
     font-weight: bold;
     width: 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
 
 }
 .retail-input::placeholder{

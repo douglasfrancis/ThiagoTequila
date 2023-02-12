@@ -20,7 +20,7 @@ export default function Section2() {
 
   return (
     <div id='section2'>
-      <h1 style={{color:'white', marginBottom: '4rem'}}>Products</h1>
+      <h1 style={{color:'white', marginBottom: '4rem', fontFamily:'GreenGroveBold'}}>Products</h1>
 
       <img id='transparent' src={transparent} alt='Transparent Logo'/>
 
