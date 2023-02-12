@@ -23,10 +23,10 @@ export default function Basket({basketOpen, setBasketOpen}) {
 
             <button className="closebtn" onClick={closeNav}>X</button>
             
-            <h1>Store coming soon</h1>
+            <h1 style={{fontFamily:'GreenGroveBold'}}>Store coming soon</h1>
 
           <div>
-            <p style={{fontFamily:'Garamond'}}>Sign up to our mailing list so we can keep you posted</p>
+            <p style={{fontFamily:'Gotham'}}>Sign up to our mailing list so we can keep you posted</p>
 
             <input id='basket-input' placeholder='Email Address'/>
 

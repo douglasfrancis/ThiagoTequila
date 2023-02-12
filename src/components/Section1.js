@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import barrels from '../Images/barrels.mp4'
+import icon from '../Images/icon.png'
 
 export default function Section1() {
 
@@ -18,7 +19,7 @@ export default function Section1() {
 
         <div className='full-gradient' style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
 
-          <h1 id='motto'>Savour the Spirit of Exquisite Craftsmanship</h1>
+          <h1 id='motto'><img id='motto-icon' src={icon} alt='icon'/>Savour the Spirit of Exquisite Craftsmanship</h1>
 
           <div id='scroll-container'>
            {//<p id='scroll' className={scroll? 'scroll':'scroll-visible'}>Scroll To Explore</p>

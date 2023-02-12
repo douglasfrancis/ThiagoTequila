@@ -11,8 +11,8 @@ export default function OurStory() {
                   <div id='magic-of-thiago' className='wow fadeInUp' data-wow-duration="2s">
                     <h2 className='story-header'>The Magic of Thiago</h2>
                     <p>1. High Altitude - Our Agave is grown high up in the mountains</p>
-                    <p>2. Red Soil - Higher the altitude the redder the soil </p>
-                    <p>3. Sweet Agave - Redder th soil the sweeter the Agave</p>
+                    <p>2. Red Soil - The higher the altitude the redder the soil </p>
+                    <p>3. Sweet Agave - The redder th soil the sweeter the Agave</p>
                     <p>4. Smooth Tequila - The sweeter the Agave the smoother the Tequila</p>
 
                     <Link to='/products'><button id='shop-now-btn'>Shop Now</button></Link>
@@ -32,7 +32,7 @@ export default function OurStory() {
           <div id="process-gradient">
             <div id='process-info' className='wow fadeInUp' data-wow-duration="2s">
                 <h2 className='story-header'>Our Process</h2>
-                <p className='our-story-p'>The process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavors to the tequila. The aging process can vary from a few months to several years, and the final product is then bottled and sold as tequila.</p>
+                <p className='our-story-p'>Our process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavors to the tequila. The aging process can vary from a few months to several years, and the final product is then bottled and sold as tequila.</p>
             </div>
 
             <img className='wow fadeInUp' data-wow-duration="2s" id='farmer' src={farmer} alt='Farmer'/>
