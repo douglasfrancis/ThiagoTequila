@@ -1,14 +1,24 @@
 import './App.css';
-import React, { useState} from 'react';
+import React, { useState,useLayoutEffect} from 'react';
 import Footer from './components/Footer';
 import cart from './Images/cart.png'
 import logo from './Images/logo.png'
-import { Outlet, Link} from 'react-router-dom'
+import { Outlet, Link, useLocation} from 'react-router-dom'
 import Basket from './components/Basket';
 import './components/Basket.css'
 import SideNav from './components/SideNav';
+import WOW from 'wowjs'
 
 function App() {
+
+  const location = useLocation();
+
+
+  useLayoutEffect(()=>{
+    new WOW.WOW({
+      live: false
+  }).init();
+  },[location])
 
   const [scrolled, setScrolled] = useState(false)
   const [basketOpen, setBasketOpen] = useState(false)

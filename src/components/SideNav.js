@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './SideNav.css'
+
 export default function SideNav({open, setOpen}) {
   return (
     <div id='sideNav' className={open ? 'nav-open': 'nav-closed'}>

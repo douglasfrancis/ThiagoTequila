@@ -20,12 +20,12 @@ export default function Section2() {
 
   return (
     <div id='section2'>
-      <h1 style={{color:'white', marginBottom: '4rem', fontFamily:'GreenGroveBold'}}>Products</h1>
+      <h1 className='wow fadeInUp' data-wow-duration="2s" style={{color:'white', marginBottom: '4rem', fontFamily:'GreenGroveBold'}}>Products</h1>
 
       <img id='transparent' src={transparent} alt='Transparent Logo'/>
 
       <div id='desktop'>
-          <div id='home-products'>
+          <div id='home-products' className='wow fadeInUp' data-wow-duration="2s">
           
           <img className={clicked === "Blanco"? "clicked": "unclicked"} style={{marginRight:0}} src={blanco} alt='Blanco' onClick={()=>setClicked("Blanco")}/>
           <img className={clicked === "Reposado"? "clicked": "unclicked"} style={{marginRight:0}} src={reposado} alt='Reposado' onClick={()=>setClicked("Reposado")}/>
@@ -36,7 +36,7 @@ export default function Section2() {
         
           </div>
 
-        <div className='more-product-info'>
+        <div  className='wow fadeInUp more-product-info' data-wow-duration="2s">
 
           <div style={{width:'40%', height: 200}} >
             {list.map((item, i)=> {
