@@ -3,6 +3,9 @@ import video from '../Images/agave.mp4'
 import './OurStory.css'
 import { Link } from 'react-router-dom'
 import farmer from '../Images/farmer.jpg'
+import arandas from '../Images/arandas.png'
+import city from '../Images/city.png'
+
 export default function OurStory() {
   return (
     <main>
@@ -47,7 +50,7 @@ export default function OurStory() {
           <div className="gradient">
             < div id='origins-info' className='wow fadeInUp' data-wow-duration="2s">
                 <h2 className='story-header'>Our Origins</h2>
-                <p>With the arrival of the Spanish conquerors in the 16th century, The Spanish brought horses with them to Mexico as they colonized the country and established large estates known as haciendas. These haciendas relied heavily on the use of horses for transportation, communication, and agricultural work. Over time, horse breeding became an important part of the local economy in Arandas and the surrounding areas. Today, horses are still an important part of the culture in Arandas, and the area is known for producing some of the finest horses in Mexico.</p>
+                <p >With the arrival of the Spanish conquerors in the 16th century, The Spanish brought horses with them to Mexico as they colonized the country and established large estates known as haciendas. These haciendas relied heavily on the use of horses for transportation, communication, and agricultural work. Over time, horse breeding became an important part of the local economy in Arandas and the surrounding areas. Today, horses are still an important part of the culture in Arandas, and the area is known for producing some of the finest horses in Mexico.</p>
                
             </div>
           </div>
@@ -57,9 +60,13 @@ export default function OurStory() {
 
         <div id='journey'>
           <div className="full-gradient">
+          <img id='arandas' src={arandas} alt='Arandas Polaroid'/>
+                <img id='city' src={city} alt='City Polaroid'/>
+
             <div id='journey-info' className='wow fadeInUp' data-wow-duration="2s">
+                
                 <h2 className='story-header'>Our Journey</h2>
-                <p>Sed sollicitudin massa pretium accumsan semper. Aenean felis eros, pharetra vitae nibh eget, consequat fringilla metus. Donec felis nisi, eleifend ac hendrerit non, sagittis quis orci. Vestibulum maximus massa eu sem pellentesque interdum. Praesent at pharetra quam. Aliquam erat volutpat. Maecenas convallis, odio ut aliquam convallis, neque quam hendrerit arcu, id tempor sem mauris quis neque. Sed elit lectus, consectetur id iaculis in, tempus quis ligula.</p>
+                <p className='our-story-p'> Our journey to find the best tequila and create the perfect drink was a thrilling and exciting adventure. It required a deep appreciation for the rich cultural heritage of Mexico and a passion for discovering the finest ingredients. To start, one must visit the heart of tequila country in Jalisco, Mexico, where agave plants are grown and harvested. From there, it's about exploring the different surrounding areas, distilleries and tasting the various styles of tequila, from the smooth and sweet blanco to the bold and complex añejo. As we tried different tequilas, we quickly understood what we wanted then slowly perfected the drink we produce today. Our journey to find the best tequila and create the perfect drink was a journey worth taking.</p>
 
               </div>
           </div>
