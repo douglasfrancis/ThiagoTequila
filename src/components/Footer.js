@@ -36,7 +36,7 @@ export default function Footer() {
             <img className='social-icon' src={instagram} alt='instagram' />
         </div>
 
-        <p style={{fontSize: '0.8rem'}}>COPYRIGHT © 2021 THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE SIP RESPONSIBLY.</p>
+        <p style={{fontSize: '0.6rem'}}>COPYRIGHT © 2021 THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
 
         <div id='footer-links'>
             <p>PRIVACY POLICY</p>
