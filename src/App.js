@@ -8,6 +8,8 @@ import Basket from './components/Basket';
 import './components/Basket.css'
 import SideNav from './components/SideNav';
 import WOW from 'wowjs'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -42,6 +44,7 @@ window.addEventListener("scroll", function(e){
 
   return (
     <div className="App">
+      <ToastContainer position='top-center'/>
       <header className="App-header">
 
        <nav id='nav' >

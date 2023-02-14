@@ -1,12 +1,35 @@
-import React from 'react'
+import React, { useState} from 'react'
 import instagram from '../Images/insta.png'
+import { toast } from 'react-toastify'
+import axios from 'axios'
 
 export default function Footer() {
+
+  const [ email, setEmail] = useState("")
+
+  const subscribe = () =>{
+    if(!email){
+      toast.error('Please input email address')
+    } else {
+      axios.post("https://api.infusionsoft.com/crm/rest/v2/contacts?fields=email_addresses", 
+        {email_addresses:[{ email:email, field:"EMAIL1", opt_in_reason:"Mailing List"}],
+        contact_type: "Other"}, {headers:{'X-Keap-API-Key': process.env.REACT_APP_KEAP_KEY}})
+      .then((res)=>{
+        console.log(res.data)
+      })
+      .catch((e)=>{
+        console.log(e)
+      })
+    }
+    
+  }
+
   return (
     <footer>
         <h1 style={{fontFamily: 'GreenGroveBold'}}>STAY UPDATED</h1>
 
-        <input type='text' placeholder='Email address'/>
+        <input type='text' placeholder='Email address' value={email} onChange={(e)=>setEmail(e.target.value)} />
+        <button onClick={subscribe}>Submit</button>
 
         <div id='socials-container'>
             <img className='social-icon' src={instagram} alt='instagram' />

@@ -45,7 +45,7 @@ export default function Section2() {
           <div className='more-product-desc' >
             {list.map((item, i)=>{
               return clicked== item.name && 
-              <p>{item.desc}</p>}
+              <p key={i}>{item.desc}</p>}
             )}
           </div>
 
