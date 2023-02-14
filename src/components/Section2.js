@@ -25,7 +25,7 @@ export default function Section2() {
       <img id='transparent' src={transparent} alt='Transparent Logo'/>
 
       <div id='desktop'>
-          <div id='home-products' className='wow fadeInUp' data-wow-duration="2s">
+          <div style={{marginLeft: 30}} id='home-products' className='wow fadeInUp' data-wow-duration="2s">
             <img className={clicked === "Vanilla"? "clicked": "unclicked"} style={{marginRight:0}} src={vanilla} alt='Vanilla' onClick={()=>setClicked("Vanilla")}/>
             <img className={clicked === "Blanco"? "clicked": "unclicked"} style={{marginRight:0}} src={blanco} alt='Blanco' onClick={()=>setClicked("Blanco")}/>
             <img className={clicked === "Black Cherry"? "clicked": "unclicked"} src={cherry} alt='Black Cherry' onClick={()=>setClicked("Black Cherry")}/>
@@ -57,7 +57,7 @@ export default function Section2() {
       <div id='mobile'>
               {list.map((item, i)=>{
                 return <div key={i} className='wow fadeInUp' data-wow-duration="2s">
-                <img className="unclicked" src={item.img} alt={item.name} />
+                <img style={item.name === 'Vanilla' ? {position:'relative', left: '-25px'}:item.name === 'Spiced' ? {position:'relative', left: '45px'}:{}} className="unclicked" src={item.img} alt={item.name} />
                 <h2 className='product-info-title'>{item.name}</h2>
                 <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
                 <p>{item.desc}</p>

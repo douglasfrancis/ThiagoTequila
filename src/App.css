@@ -46,9 +46,9 @@ html{
 #motto-icon{
   position: absolute;
   top: -27px;
-  left: 42%;
+  left: calc(50% - 25px);
   z-index: 500;
-  width: 100px;
+  width: 50px;
 }
 
 h1{

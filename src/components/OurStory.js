@@ -60,8 +60,8 @@ export default function OurStory() {
 
         <div id='journey'>
           <div className="full-gradient">
-          <img id='arandas' src={arandas} alt='Arandas Polaroid'/>
-                <img id='city' src={city} alt='City Polaroid'/>
+            <img id='arandas' className='wow fadeInUp' data-wow-delay="0.5s" data-wow-duration="2s" src={arandas} alt='Arandas Polaroid'/>
+            <img id='city' className='wow fadeInUp' data-wow-duration="2s"  src={city} alt='City Polaroid'/>
 
             <div id='journey-info' className='wow fadeInUp' data-wow-duration="2s">
                 
