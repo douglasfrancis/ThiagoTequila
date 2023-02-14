@@ -72,6 +72,28 @@
       top: 0;
   }
 
+  #cherries{
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 330px;
+    z-index: 999;
+    transition: 0.4s;
+
+  }
+
+  .divClicked{
+    width: 184px;
+    position: relative;
+    margin: 0 1rem;
+  }
+
+  .divUnclicked{
+    width: 154px;
+    position: relative;
+    margin: 0 1rem;
+  }
+
 
 @media only screen and (max-width: 850px) {
     #nav-items {
