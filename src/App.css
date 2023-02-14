@@ -231,8 +231,8 @@ nav{
 
 
 input {
-  max-width: 400px;
-  width: 50vw;
+  max-width: 90vw;
+  width: 400px;
   margin: 0 auto 1rem auto;
   background-color: unset;
   border: 1px solid white;
