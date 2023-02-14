@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import instagram from '../Images/insta.png'
 import { toast } from 'react-toastify'
 import axios from 'axios'
+import './Footer.css'
 
 export default function Footer() {
 
@@ -28,8 +29,8 @@ export default function Footer() {
     <footer>
         <h1 style={{fontFamily: 'GreenGroveBold'}}>STAY UPDATED</h1>
 
-        <input type='text' placeholder='Email address' value={email} onChange={(e)=>setEmail(e.target.value)} />
-        <button onClick={subscribe}>Submit</button>
+        <input id='footer-input' type='text' placeholder='Email Address' value={email} onChange={(e)=>setEmail(e.target.value)} />
+        <button id='subscribe-btn' onClick={subscribe}>Subscribe</button>
 
         <div id='socials-container'>
             <img className='social-icon' src={instagram} alt='instagram' />

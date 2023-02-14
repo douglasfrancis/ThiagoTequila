@@ -229,20 +229,6 @@ nav{
     text-align: center;
 }
 
-footer{
-  background-color: rgb(18,18,18);
-  min-height: 150px;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-family: Gotham;
-}
-
-footer > * {
-  color: white;
-}
 
 input {
   max-width: 400px;
@@ -253,23 +239,6 @@ input {
   height: 50px;
   padding: 1rem;
 }
-
-#footer-links{
-  display: flex;
-  flex-direction: row;
-  width: 500px;
-  max-width: 90vw;
-  justify-content: space-evenly;
-  margin: 0 auto 2rem auto;
-}
-
-
-
-.social-icon{
-  height: 30px;
-}
-
-
 
 
 .container {
