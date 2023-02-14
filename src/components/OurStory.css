@@ -189,10 +189,10 @@ video{
   @media only screen and (max-width: 800px) {
      #origins-info, #journey-info{
       position: relative;
-      top: 5%;
+      top: 0;
       left: 5%;
       width: 100%;
-      height: 100%;
+      height: 95%;
       right: unset;
       overflow: scroll;
       margin: 0;
