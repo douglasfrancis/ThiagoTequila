@@ -1,21 +1,14 @@
 import React from 'react'
 import './Basket.css'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Basket({basketOpen, setBasketOpen}) {
 
-   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
+  const url = process.env.REACT_APP_MAILCHIMP_URL;
 
-   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+
    function closeNav() {
        setBasketOpen(false)
-    //document.getElementById("mySidenav").style.width = 0;
-    //document.getElementById("main").style.marginLeft = 0;
-    //document.body.style.backgroundColor = "white";
   }
 
   return (
@@ -28,9 +21,22 @@ export default function Basket({basketOpen, setBasketOpen}) {
           <div>
             <p style={{fontFamily:'Gotham'}}>Sign up to our mailing list so we can keep you posted</p>
 
-            <input id='basket-input' placeholder='Email Address'/>
+            <MailchimpSubscribe
+              url={url}
+              render={({ subscribe, status, message }) => (
+                <div >
+                  <form id='basket-form'  onSubmit={(e) =>{ e.preventDefault(); subscribe({EMAIL: e.target[0].value})}}>
+                    <input id='basket-input' type='text' placeholder='Email Address' />
+                    <button id='subscribe-btn' type='submit'>Subscribe</button>
+                  </form>
+                  {status === "sending" && <div style={{ color: "blue", margin: 20, fontWeight:'bold' }}>sending...</div>}
+                  {status === "error" && <div style={{ color: "red", margin: 20,fontWeight:'bold' }} dangerouslySetInnerHTML={{__html: message}}/>}
+                  {status === "success" && <div style={{ color: "green", margin: 20,fontWeight:'bold' }}>Subscribed !</div>}
+            </div>
+          )}
+        />
 
-            <button className='subscribe-btn'>Subscribe</button>
+           
           </div>
             
         </div>

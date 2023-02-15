@@ -1,13 +1,11 @@
 import React, { useState} from 'react'
 import instagram from '../Images/insta.png'
-import { toast } from 'react-toastify'
-import axios from 'axios'
 import './Footer.css'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Footer() {
 
-  const url = "https://gmail.us21.list-manage.com/subscribe/post?u=6f7a40d650e7fa8643e994e39&amp;id=0d9fa09519&amp;f_id=007efbe1f0";
+  const url = process.env.REACT_APP_MAILCHIMP_URL;
 
   const [ email, setEmail] = useState("")
 

@@ -58,14 +58,28 @@
     font-size: 36px;
     margin-left: 50px;
   }
-  .closebtn, .subscribe-btn{
+  .closebtn{
     background-color: unset;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 0.5rem;
     font-weight: bold;
     font-family: GreenGroveBold;
     text-transform: uppercase;
     color: white;
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  .subscribe-btn{
+    border: 2px solid #1e1e1e;
+    color: #1e1e1e;
+    background-color: white;
+    margin: 0 auto 1rem auto;
+    font-family: GreenGroveBold;
+    text-transform: uppercase;
+    height: 40px;
+    width: 100px;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -75,8 +89,8 @@
   }
 
   #basket-input{
-    width: 90%;
-    border: 2px solid white;
+    width: 100%;
+    border: 1px solid white;
     font-family: Gotham;
     font-size: 16px;
     color: white;
@@ -87,6 +101,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  #basket-form{
+    width: 100%;
+    margin: 0 auto;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
