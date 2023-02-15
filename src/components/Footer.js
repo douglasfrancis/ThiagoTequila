@@ -3,34 +3,32 @@ import instagram from '../Images/insta.png'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 import './Footer.css'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Footer() {
 
-  const [ email, setEmail] = useState("")
+  const url = "https://gmail.us21.list-manage.com/subscribe/post?u=6f7a40d650e7fa8643e994e39&amp;id=0d9fa09519&amp;f_id=007efbe1f0";
 
-  const subscribe = () =>{
-    if(!email){
-      toast.error('Please input email address')
-    } else {
-      axios.post("https://api.infusionsoft.com/crm/rest/v2/contacts?fields=email_addresses", 
-        {email_addresses:[{ email:email, field:"EMAIL1", opt_in_reason:"Mailing List"}],
-        contact_type: "Other"}, {headers:{'X-Keap-API-Key': process.env.REACT_APP_KEAP_KEY}})
-      .then((res)=>{
-        console.log(res.data)
-      })
-      .catch((e)=>{
-        console.log(e)
-      })
-    }
-    
-  }
+  const [ email, setEmail] = useState("")
 
   return (
     <footer>
         <h1 style={{fontFamily: 'GreenGroveBold'}}>STAY UPDATED</h1>
 
-        <input id='footer-input' type='text' placeholder='Email Address' value={email} onChange={(e)=>setEmail(e.target.value)} />
-        <button id='subscribe-btn' onClick={subscribe}>Subscribe</button>
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <div >
+              <form style={{margin: '0 auto'}} onSubmit={(e) =>{ e.preventDefault(); subscribe({EMAIL: e.target[0].value})}}>
+                  <input id='footer-input' type='text' placeholder='Email Address' value={email} onChange={(e)=>setEmail(e.target.value)} />
+                 <button id='subscribe-btn' type='submit'>Subscribe</button>
+              </form>
+              {status === "sending" && <div style={{ color: "blue", margin: 20, fontWeight:'bold' }}>sending...</div>}
+              {status === "error" && <div style={{ color: "red", margin: 20,fontWeight:'bold' }} dangerouslySetInnerHTML={{__html: message}}/>}
+              {status === "success" && <div style={{ color: "green", margin: 20,fontWeight:'bold' }}>Subscribed !</div>}
+            </div>
+          )}
+        />
 
         <div id='socials-container'>
             <img className='social-icon' src={instagram} alt='instagram' />

@@ -43,6 +43,20 @@ footer{
   #footer-input{
       font-size: 16px;
       font-family: Gotham;
+      color: white;
+  }
+
+  #root > div > footer > div:nth-child(4) > div > button{
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #1e1e1e;
+    color: #1e1e1e;
+    background-color: white;
+    margin: 0 auto 1rem auto;
+    font-family: GreenGroveBold;
+    text-transform: uppercase;
   }
   
+ 
   
