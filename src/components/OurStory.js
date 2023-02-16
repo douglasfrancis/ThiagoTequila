@@ -35,7 +35,7 @@ export default function OurStory() {
           <div id="process-gradient">
             <div id='process-info' className='wow fadeInUp' data-wow-duration="2s">
                 <h2 className='story-header'>Our Process</h2>
-                <p className='our-story-p'>Our process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavors to the tequila. The aging process can vary from a few months to several years, and the final product is then bottled and sold as tequila.</p>
+                <p className='our-story-p'>Our process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavors to the tequila. The ageing process can vary from a few months to several years, and the final product is then bottled and sold as tequila.</p>
             </div>
 
             <img className='wow fadeInUp' data-wow-duration="2s" id='farmer' src={farmer} alt='Farmer'/>
@@ -50,8 +50,7 @@ export default function OurStory() {
           <div className="gradient">
             < div id='origins-info' className='wow fadeInUp' data-wow-duration="2s">
                 <h2 className='story-header'>Our Origins</h2>
-                <p >With the arrival of the Spanish conquerors in the 16th century, The Spanish brought horses with them to Mexico as they colonized the country and established large estates known as haciendas. These haciendas relied heavily on the use of horses for transportation, communication, and agricultural work. Over time, horse breeding became an important part of the local economy in Arandas and the surrounding areas. Today, horses are still an important part of the culture in Arandas, and the area is known for producing some of the finest horses in Mexico.</p>
-               
+                <p >With the arrival of the Spanish conquerors in the 16th century, The Spanish brought horses with them to Mexico as they colonised the country and established large estates known as haciendas. These haciendas relied heavily on the use of horses for transportation, communication, and agricultural work. Over time, horse breeding became an important part of the local economy in the area. Today, horses are still an important part of the culture, and the area is known for producing some of the finest horses in Mexico.</p>
             </div>
           </div>
 

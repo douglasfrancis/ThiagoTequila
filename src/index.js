@@ -15,18 +15,14 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ScrollToTop />
-
       <Routes>
         <Route path="/" element={<App />}  >
             <Route index element={<Home />}/>
             <Route path="/products" element={<Products />}/>
             <Route path="/our-story" element={<OurStory />}/>
             <Route path="/retail" element={<Retail />}/>
-
         </Route>
         <Route path='*' element={<NotFound/>} />
-
-       
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
