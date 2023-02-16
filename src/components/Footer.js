@@ -19,7 +19,7 @@ export default function Footer() {
             <div >
               <form style={{margin: '0 auto'}} onSubmit={(e) =>{ e.preventDefault(); subscribe({EMAIL: e.target[0].value})}}>
                   <input id='footer-input' type='text' placeholder='Email Address' value={email} onChange={(e)=>setEmail(e.target.value)} />
-                 <button id='subscribe-btn' type='submit'>Subscribe</button>
+                 <button className='subscribe-btn' type='submit'>Subscribe</button>
               </form>
               {status === "sending" && <div style={{ color: "blue", margin: 20, fontWeight:'bold' }}>sending...</div>}
               {status === "error" && <div style={{ color: "red", margin: 20,fontWeight:'bold' }} dangerouslySetInnerHTML={{__html: message}}/>}
