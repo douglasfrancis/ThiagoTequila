@@ -62,7 +62,7 @@ window.addEventListener("scroll", function(e){
          </div>
 
          <Link to='/' id='logo-container' >
-         <img id='logo' src={logo} alt='Thiago logo' />
+         <img id='logo' style={open ? {display: 'none'}:{}} src={logo} alt='Thiago logo' />
         </Link>
 
         <div >
