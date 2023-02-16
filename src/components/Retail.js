@@ -51,37 +51,37 @@ export default function Retail() {
         <div id='product-checkboxes'>
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Blanco" name="Blanco" value="Blanco" />
-            <label htmlFor="Blanco">Blanco</label>
+            <label htmlFor="Blanco">Blanco<br/>Tequila</label>
           </div>
           
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Reposado" name="Reposado" value="Reposado" />
-            <label htmlFor="Reposado">Reposado</label>
+            <label htmlFor="Reposado">Reposado<br/>Tequila</label>
           </div>
 
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Cherry" name="Cherry" value="Cherry" />
-            <label htmlFor="Cherry">Cherry</label>
+            <label htmlFor="Cherry">Black<br/>Cherry<br/>Tequila</label>
           </div>
 
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Vanilla" name="Vanilla" value="Vanilla" />
-            <label htmlFor="Vanilla">Vanilla</label>
+            <label htmlFor="Vanilla">Vanilla<br/>Tequila</label>
           </div>
 
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Spiced" name="Spiced" value="Spiced" />
-            <label htmlFor="Spiced">Spiced</label>
+            <label htmlFor="Spiced">Spiced<br/>Tequila</label>
           </div>
 
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Punch" name="Punch" value="Punch" />
-            <label htmlFor="Punch">Punch</label>
+            <label htmlFor="Punch">Tequila<br/>Punch<br/>(355ml)</label>
           </div>
 
           <div className='checkbox-container'>
             <input className='checkbox' type="checkbox" id="Seltzer" name="Seltzer" value="Seltzer" />
-            <label htmlFor="Seltzer">Seltzer</label>
+            <label htmlFor="Seltzer">Tequila<br/>Seltzer<br/>(355ml)</label>
           </div>
         </div>
 
