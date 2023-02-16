@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import instagram from '../Images/insta.png'
+import fb from '../Images/fb.png'
 import './Footer.css'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
@@ -29,7 +30,9 @@ export default function Footer() {
         />
 
         <div id='socials-container'>
-            <img className='social-icon' src={instagram} alt='instagram' />
+            <a href='https://www.instagram.com/thiagotequila' target='_blank'><img className='social-icon' src={instagram} alt='instagram' /></a>
+            <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={fb} alt='instagram' /></a>
+
         </div>
 
         <p style={{fontSize: '0.6rem'}}>COPYRIGHT © 2021 THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
