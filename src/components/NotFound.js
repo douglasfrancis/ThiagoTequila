@@ -14,9 +14,9 @@ export default function NotFound() {
     <div style={stylesheet}>
 
       <img src={logo} alt='logo'/>
-      <h1>Oops page not found!</h1>
+      <h1 style={{color:'white'}}>Oops page not found!</h1>
 
-      <Link to='/'>Return to Home</Link>
+      <Link style={{color:'white'}} to='/'>Return to Home</Link>
     </div>
   )
 }

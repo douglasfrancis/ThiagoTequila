@@ -7,7 +7,7 @@ import Products from './components/Products'
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import OurStory from './components/OurStory';
-import Retail from './components/Retail';
+import Wholesale from './components/Wholesale';
 import ScrollToTop from './components/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +20,7 @@ root.render(
             <Route index element={<Home />}/>
             <Route path="/products" element={<Products />}/>
             <Route path="/our-story" element={<OurStory />}/>
-            <Route path="/retail" element={<Retail />}/>
+            <Route path="/wholesale" element={<Wholesale />}/>
         </Route>
         <Route path='*' element={<NotFound/>} />
       </Routes>

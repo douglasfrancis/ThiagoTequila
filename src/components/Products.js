@@ -2,10 +2,10 @@ import React from 'react'
 import './Products.css'
 import Product from './Product'
 import blanco from '../Images/blanco.png'
-import reposado from '../Images/reposado.png'
-import cherry from '../Images/cherry.png'
+import reposado from '../Images/reposado.webp'
+import cherry from '../Images/cherry.webp'
 import vanilla from '../Images/vanilla.png'
-import spiced from '../Images/spiced.png'
+import spiced from '../Images/spiced.webp'
 
 export default function Products() {
 

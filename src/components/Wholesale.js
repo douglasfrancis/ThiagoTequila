@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react'
-import './Retail.css'
+import './Wholesale.css'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify'
 
-export default function Retail() {
+export default function Wholesale() {
 
   const form = useRef();
   const [sent, setSent] = useState(false)
