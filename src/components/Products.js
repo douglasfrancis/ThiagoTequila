@@ -3,9 +3,9 @@ import './Products.css'
 import Product from './Product'
 import blanco from '../Images/blanco.png'
 import reposado from '../Images/reposado.webp'
-import cherry from '../Images/cherry.webp'
+import cherry from '../Images/cherry.png'
 import vanilla from '../Images/vanilla.png'
-import spiced from '../Images/spiced.webp'
+import spiced from '../Images/spiced.png'
 
 export default function Products() {
 
