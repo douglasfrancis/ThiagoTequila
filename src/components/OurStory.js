@@ -15,7 +15,7 @@ export default function OurStory() {
                     <h2 className='story-header'>The Magic of Thiago</h2>
                     <p>1. High Altitude - Our Agave is grown high up in the mountains</p>
                     <p>2. Red Soil - The higher the altitude the redder the soil </p>
-                    <p>3. Sweet Agave - The redder th soil the sweeter the Agave</p>
+                    <p>3. Sweet Agave - The redder the soil the sweeter the Agave</p>
                     <p>4. Smooth Tequila - The sweeter the Agave the smoother the Tequila</p>
 
                     <Link to='/products'><button id='shop-now-btn'>Shop Now</button></Link>
