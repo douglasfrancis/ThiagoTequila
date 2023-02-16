@@ -8,7 +8,7 @@ export default function SideNav({open, setOpen}) {
         <Link to='/' className='' onClick={()=>setOpen(false)}>Home</Link>
         <Link to='/products' className='' onClick={()=>setOpen(false)}>Products</Link>
         <Link to='/our-story' className='' onClick={()=>setOpen(false)}>Our Story</Link>
-        <Link to='/retail' className='' onClick={()=>setOpen(false)}>Wholesale</Link>
+        <Link to='/wholesale' className='' onClick={()=>setOpen(false)}>Wholesale</Link>
 
     </div>
   )
