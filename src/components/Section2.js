@@ -1,9 +1,9 @@
 import React, { useState} from 'react'
 import blanco from '../Images/blanco_shadow.png'
 import reposado from '../Images/reposado_with_shadow.webp'
-import cherry from '../Images/cherry_with_cherries.png'
+import cherry from '../Images/cherry_with_cherries.webp'
 import vanilla from '../Images/vanilla_with_vanilla.png'
-import spiced from '../Images/spiced_with_spiced.png'
+import spiced from '../Images/spiced_with_spiced.webp'
 import transparent from '../Images/logo_transparent.png'
 import './Section2.css'
 
