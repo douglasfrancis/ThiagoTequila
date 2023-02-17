@@ -34,7 +34,6 @@ html{
   font-family: GreenGroveBold;
   font-size: 1.5rem;
   font-weight: 200;
-  border: 1px solid white;
   padding: 2rem 3rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -46,9 +45,9 @@ html{
 #motto-icon{
   position: absolute;
   top: -27px;
-  left: calc(50% - 25px);
+  left: calc(50% - 50px);
   z-index: 500;
-  width: 50px;
+  width: 100px;
 }
 
 h1{

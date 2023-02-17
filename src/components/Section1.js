@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import barrels from '../Images/barrels.mp4'
-import icon from '../Images/motto-icon.png'
+import icon from '../Images/icon.png'
 
 export default function Section1() {
 
