@@ -1,5 +1,6 @@
 video{
     height: 90vh;
+    min-height: 500px;
     width: 100vw;
     object-fit: cover;
     object-position: bottom;
@@ -34,7 +35,7 @@ video{
       text-align: center;
   }
 
-  #process, #origins, #journey{
+  #process, #origins{
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -44,9 +45,21 @@ video{
 
   }
 
+#journey{
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 90vh;
+    height: fit-content;
+    position: relative;
+
+  }
+
+
   #magic-of-thiago{
     bottom: 10%;
     left: 10%;
+   
   }
   
   #magic-of-thiago p{
@@ -237,3 +250,14 @@ video{
     }
   
  }
+
+ @media only screen and (orientation: landscape) and (max-height: 600px) {
+  #process, #origins{
+    min-height: 500px;
+  }
+  #journey{
+    min-height: 700px;
+
+  }
+  
+}
