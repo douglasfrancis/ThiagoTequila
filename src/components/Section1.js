@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useRef} from 'react'
 import barrels from '../Images/barrels.mp4'
 import icon from '../Images/icon.png'
 
@@ -6,13 +6,13 @@ export default function Section1() {
 
   const [scroll, setScroll] = useState(false)
 
-
   window.addEventListener("scroll", function(e){
     if ( window.pageYOffset > 10 ) {
       setScroll(true)
   } else {
       setScroll(false)
   }});
+
 
   return (
     <div id='section1'>
@@ -31,7 +31,7 @@ export default function Section1() {
 
         </div>
 
-        <video className='background' autoPlay muted loop playsInline >
+        <video className='background' autoPlay muted loop playsInline controls={false}>
                 <source src={barrels} type="video/mp4"/>
                 Your browser does not support the video tag.
         </video>

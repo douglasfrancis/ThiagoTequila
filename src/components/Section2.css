@@ -20,6 +20,7 @@
 
 .unclicked{
     height: 500px;
+    width: auto;
     transition: 0.4s;
     margin: 0 1rem;
     z-index: 500;
@@ -27,10 +28,12 @@
   
   .clicked{
     height: 500px;
+    width: auto;
     transform:scale(1.2);
     transition: 0.4s;
     z-index: 501;
     margin: 0 1rem ;
+    position: relative;
   }
   
   .clicked p{
@@ -93,6 +96,20 @@
     position: relative;
     margin: 0 1rem;
   }
+
+  #home-products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 920px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+
+  
 
 
 @media only screen and (max-width: 850px) {

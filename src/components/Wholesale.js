@@ -8,24 +8,31 @@ export default function Wholesale() {
   const form = useRef();
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  //Form validation
+  const [name, setName] = useState("")
+  const [number, setNumber] = useState("")
+  const [email, setEmail] = useState("")
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    
-    setLoading(true)
-
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    if(!name || !number || !email){
+      toast.error("Please add name, email and number")
+    } else{
+      setLoading(true)
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           setSent(true)
           setLoading(false)
+          setName("");setEmail("");setNumber("")
       }, (error) => {
           console.log(error.text);
           setSent(false)
           toast.error("Oops, something went wrong")
           setLoading(false)
       });
+    }
   };
 
   return (
@@ -42,9 +49,9 @@ export default function Wholesale() {
         </div>: 
         <form ref={form} onSubmit={sendEmail}>
         <input className='retail-input' placeholder='Company Name' name='Company'/>
-        <input className='retail-input' placeholder='Contact Name' name='Name'/>
-        <input className='retail-input' placeholder='Email' name='Email'/>
-        <input className='retail-input' placeholder='Phone Number' name='Number' />
+        <input className='retail-input' placeholder='Contact Name' name='Name' value={name} onChange={(e)=>setName(e.target.value)}/>
+        <input className='retail-input' placeholder='Email' name='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+        <input className='retail-input' placeholder='Phone Number' name='Number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
 
         <p className='form-header'>Products Interested In</p>
 

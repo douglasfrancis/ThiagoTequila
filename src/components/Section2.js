@@ -25,7 +25,7 @@ export default function Section2() {
       <img id='transparent' src={transparent} alt='Transparent Logo'/>
 
       <div id='desktop'>
-          <div style={{marginLeft: 30}} id='home-products' className='wow fadeInUp' data-wow-duration="2s">
+          <div id='home-products' className='wow fadeInUp' data-wow-duration="2s">
             <img className={clicked === "Vanilla"? "clicked": "unclicked"} style={{marginRight:0}} src={vanilla} alt='Vanilla' onClick={()=>setClicked("Vanilla")}/>
             <img className={clicked === "Blanco"? "clicked": "unclicked"} style={{marginRight:0}} src={blanco} alt='Blanco' onClick={()=>setClicked("Blanco")}/>
             <img className={clicked === "Black Cherry"? "clicked": "unclicked"} src={cherry} alt='Black Cherry' onClick={()=>setClicked("Black Cherry")}/>
