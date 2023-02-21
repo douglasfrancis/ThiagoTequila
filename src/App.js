@@ -55,19 +55,19 @@ window.addEventListener("scroll", function(e){
               <div className="bar3"></div>
           </div>
 
-         <div id='nav-items' >
-            <Link to='/products' className={scrolled? 'nav-item1' :'nav-item'} >Products</Link>
-            <Link to='/our-story' className={scrolled? 'nav-item1' :'nav-item'} >Our Story</Link>
-            <Link to='/wholesale' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
-         </div>
+          <div id='nav-items' >
+              <Link to='/products' className={scrolled? 'nav-item1' :'nav-item'} >Products</Link>
+              <Link to='/our-story' className={scrolled? 'nav-item1' :'nav-item'} >Our Story</Link>
+              <Link to='/wholesale' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
+          </div>
 
-         <Link to='/' id='logo-container' >
-         <img id='logo' style={open ? {display: 'none'}:{}} src={logo} alt='Thiago logo' />
-        </Link>
+          <Link to='/' id='logo-container' >
+          <img id='logo' style={open ? {display: 'none'}:{}} src={logo} alt='Thiago logo' />
+          </Link>
 
-        <div >
-          <img id='cart' src={cart} alt='Shopping cart' onClick={()=>setBasketOpen(true)}  />
-        </div>
+          <div >
+            <img id='cart' src={cart} alt='Shopping cart' onClick={()=>setBasketOpen(true)}  />
+          </div>
         
        </nav>
 

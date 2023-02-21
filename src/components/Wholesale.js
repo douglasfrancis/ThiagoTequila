@@ -40,7 +40,10 @@ export default function Wholesale() {
       <div id='retail-container'>
         <div>
           <h1 id='wholesale-header'>Wholesale</h1>
-          <p id='retail-info'>Take control of your wholesale buying experience by registering for an account. By filling out our simple and quick form, you will gain access to exclusive features, benefits, custom pricing options and more. Our team will get in touch to set up your account and ensure a seamless experience. Start now and experience the difference for yourself.</p>
+          <p id='retail-info'>Fill out our simple and quick form and gain access to exclusive features, benefits, custom pricing options and more. Our team will get in touch to set up your account and ensure a seamless experience.</p>
+        
+          <h1 id='wholesale-header'>White Label</h1>
+          <p id='retail-info'>We offer a white label service on all of our products, allowing you to add your own label and branding. Simply send your label artwork, place orders and we can take care of the rest. Get in touch today to find out more.</p>
         </div>
 
         {sent ? <div>
@@ -48,74 +51,84 @@ export default function Wholesale() {
           <p id='sent-p'>We will be in touch with you very soon to further discuss your requirements.</p>
         </div>: 
         <form ref={form} onSubmit={sendEmail}>
-        <input className='retail-input' placeholder='Company Name' name='Company'/>
-        <input className='retail-input' placeholder='Contact Name' name='Name' value={name} onChange={(e)=>setName(e.target.value)}/>
-        <input className='retail-input' placeholder='Email' name='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
-        <input className='retail-input' placeholder='Phone Number' name='Number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
-
-        <p className='form-header'>Products Interested In</p>
-
-        <div id='product-checkboxes'>
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Blanco" name="Blanco" value="Blanco" />
-            <label htmlFor="Blanco">Blanco<br/>Tequila</label>
+          <div id='product-checkboxes'>
+            <div className='checkbox-container'>
+                <input className='checkbox' type="radio" id="Wholesale" name="type" value="Wholesale" />
+                <label htmlFor="Wholesale">Wholesale</label>
+              </div>
+              <div className='checkbox-container'>
+                <input className='checkbox' type="radio" id="White Label" name="type" value="White Label" />
+                <label htmlFor="White Label">White Label</label>
+              </div>
           </div>
-          
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Reposado" name="Reposado" value="Reposado" />
-            <label htmlFor="Reposado">Reposado<br/>Tequila</label>
-          </div>
+          <input className='retail-input' placeholder='Company Name' name='Company'/>
+          <input className='retail-input' placeholder='Contact Name' name='Name' value={name} onChange={(e)=>setName(e.target.value)}/>
+          <input className='retail-input' placeholder='Email' name='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <input className='retail-input' placeholder='Phone Number' name='Number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Cherry" name="Cherry" value="Cherry" />
-            <label htmlFor="Cherry">Black<br/>Cherry<br/>Tequila</label>
-          </div>
+          <p className='form-header'>Products Interested In</p>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Vanilla" name="Vanilla" value="Vanilla" />
-            <label htmlFor="Vanilla">Vanilla<br/>Tequila</label>
-          </div>
+          <div id='product-checkboxes'>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Blanco" name="Blanco" value="Blanco" />
+              <label htmlFor="Blanco">Blanco<br/>Tequila</label>
+            </div>
+            
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Reposado" name="Reposado" value="Reposado" />
+              <label htmlFor="Reposado">Reposado<br/>Tequila</label>
+            </div>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Spiced" name="Spiced" value="Spiced" />
-            <label htmlFor="Spiced">Spiced<br/>Tequila</label>
-          </div>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Cherry" name="Cherry" value="Cherry" />
+              <label htmlFor="Cherry">Black<br/>Cherry<br/>Tequila</label>
+            </div>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Punch" name="Punch" value="Punch" />
-            <label htmlFor="Punch">Tequila<br/>Punch<br/>(355ml)</label>
-          </div>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Vanilla" name="Vanilla" value="Vanilla" />
+              <label htmlFor="Vanilla">Vanilla<br/>Tequila</label>
+            </div>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="checkbox" id="Seltzer" name="Seltzer" value="Seltzer" />
-            <label htmlFor="Seltzer">Tequila<br/>Seltzer<br/>(355ml)</label>
-          </div>
-        </div>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Spiced" name="Spiced" value="Spiced" />
+              <label htmlFor="Spiced">Spiced<br/>Tequila</label>
+            </div>
 
-        <p className='form-header'>Order Amount</p>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Punch" name="Punch" value="Punch" />
+              <label htmlFor="Punch">Tequila<br/>Punch<br/>(355ml)</label>
+            </div>
 
-        <div id='product-checkboxes'>
-          <div className='checkbox-container'>
-            <input className='checkbox' type="radio" id="0-100" name="qty" value="0-100" />
-            <label htmlFor="0-100">0 &gt; 100</label>
-          </div>
-
-          <div className='checkbox-container'>
-            <input className='checkbox' type="radio" id="101-500" name="qty" value="101-500" />
-            <label htmlFor="101-500">101 &gt; 500</label>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="checkbox" id="Seltzer" name="Seltzer" value="Seltzer" />
+              <label htmlFor="Seltzer">Tequila<br/>Seltzer<br/>(355ml)</label>
+            </div>
           </div>
 
-          <div className='checkbox-container'>
-            <input className='checkbox' type="radio" id="501+" name="qty" value="501+" />
-            <label htmlFor="501+">501 +</label>
+          <p className='form-header'>Order Amount</p>
+
+          <div id='product-checkboxes'>
+            <div className='checkbox-container'>
+              <input className='checkbox' type="radio" id="0-100" name="qty" value="0-100" />
+              <label htmlFor="0-100">0 &gt; 100</label>
+            </div>
+
+            <div className='checkbox-container'>
+              <input className='checkbox' type="radio" id="101-500" name="qty" value="101-500" />
+              <label htmlFor="101-500">101 &gt; 500</label>
+            </div>
+
+            <div className='checkbox-container'>
+              <input className='checkbox' type="radio" id="501+" name="qty" value="501+" />
+              <label htmlFor="501+">501 +</label>
+            </div>
           </div>
-        </div>
        
 
 
-        <button className='submit-btn' type='submit' disabled={loading}>{loading? "Sending..." : "Submit"}</button>
+          <button className='submit-btn' type='submit' disabled={loading}>{loading? "Sending..." : "Submit"}</button>
 
-        <p id='consent'>By submitting this form I consent for Thiago Tequila to store the information provided above to contact me regarding any products and services offered by Thiago Tequila.</p>
+          <p id='consent'>By submitting this form I consent for Thiago Tequila to store the information provided above to contact me regarding any products and services offered by Thiago Tequila.</p>
         
       </form>
         }

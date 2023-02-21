@@ -27,7 +27,6 @@ export default function Section1() {
             <div className="arrow"></div>
           </div>
 
-          
 
         </div>
 
