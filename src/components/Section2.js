@@ -39,7 +39,7 @@ export default function Section2() {
             {list.map((item, i)=> {
               return clicked===item.name && 
               <h2 key={i} className='product-info-title'>{item.name}</h2>})}
-            <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
+            {/*<button className='product-btn' style={{width:"200px"}}>Coming Soon</button>*/}
           </div>
 
           <div className='more-product-desc' >
@@ -59,7 +59,7 @@ export default function Section2() {
                 return <div key={i} className='wow fadeInUp' data-wow-duration="2s">
                 <img style={item.name === 'Vanilla' ? {position:'relative', left: '-25px'}:item.name === 'Spiced' ? {position:'relative', left: '27px'}:{}} className="unclicked" src={item.img} alt={item.name} />
                 <h2 className='product-info-title'>{item.name}</h2>
-                <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
+                {/*<button className='product-btn' style={{width:"200px"}}>Coming Soon</button>*/}
                 <p>{item.desc}</p>
                 </div>
               })}

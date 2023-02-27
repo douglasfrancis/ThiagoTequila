@@ -48,7 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: top;
     min-height: 400px;
     width: 90%;
@@ -64,7 +64,7 @@
   .product-info-title{
     font-family: GreenGroveBold;
     font-size: 4rem;
-    margin-top: 0;
+    margin-top: 1rem;
     text-transform: uppercase;
 
   }
