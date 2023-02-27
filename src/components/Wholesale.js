@@ -109,18 +109,18 @@ export default function Wholesale() {
 
           <div id='product-checkboxes'>
             <div className='checkbox-container'>
-              <input className='checkbox' type="radio" id="0-100" name="qty" value="0-100" />
-              <label htmlFor="0-100">0 &gt; 100</label>
+              <input className='checkbox' type="radio" id="0-1000" name="qty" value="0-1000" />
+              <label htmlFor="0-1000">0 &gt; 1000</label>
             </div>
 
             <div className='checkbox-container'>
-              <input className='checkbox' type="radio" id="101-500" name="qty" value="101-500" />
-              <label htmlFor="101-500">101 &gt; 500</label>
+              <input className='checkbox' type="radio" id="1001-10000" name="qty" value="1001-10000" />
+              <label htmlFor="1001-10000">1001 &gt; 10,000</label>
             </div>
 
             <div className='checkbox-container'>
-              <input className='checkbox' type="radio" id="501+" name="qty" value="501+" />
-              <label htmlFor="501+">501 +</label>
+              <input className='checkbox' type="radio" id="10,000 +" name="qty" value="10,000 +" />
+              <label htmlFor="10,000 +">10,000 +</label>
             </div>
           </div>
        
