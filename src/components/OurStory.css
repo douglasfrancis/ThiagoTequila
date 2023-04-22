@@ -200,7 +200,7 @@ video{
   }
 
   @media only screen and (max-width: 800px) {
-     #origins-info, #journey-info{
+     #origins-info, #journey-info, #process-info{
       position: relative;
       top: 0;
       left: 5%;
