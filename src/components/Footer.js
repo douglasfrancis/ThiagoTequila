@@ -42,7 +42,7 @@ export default function Footer() {
 
             <p>TERMS & CONDITIONS</p>
 
-            <p>MEDIA INQUIRIES</p>
+            <p>MEDIA ENQUIRIES</p>
 
         </div>
     </footer>

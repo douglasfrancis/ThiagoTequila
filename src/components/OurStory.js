@@ -35,7 +35,7 @@ export default function OurStory() {
           <div id="process-gradient">
             <div id='process-info' className='wow fadeInUp' data-wow-duration="2s">
                 <h2 className='story-header'>Our Process</h2>
-                <p className='our-story-p'>Our process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavors to the tequila. The ageing process can vary from a few months to several years, and the final product is then bottled and sold as tequila.</p>
+                <p className='our-story-p'>Our process of making tequila involves harvesting mature blue agave plants, cooking the piñas (the core of the agave plant), crushing them to extract the juice, fermenting the juice with yeast, and then distilling the fermented juice twice. The resulting liquid is then aged in oak barrels, which imparts unique flavours to the tequila. The ageing process can vary from a few months to several years, and the final product is then bottled and sold as Tequila.</p>
             </div>
 
             <img className='wow fadeInUp' data-wow-duration="2s" id='farmer' src={farmer} alt='Farmer'/>
@@ -65,7 +65,7 @@ export default function OurStory() {
             <div id='journey-info' className='wow fadeInUp' data-wow-duration="2s">
                 
                 <h2 className='story-header'>Our Journey</h2>
-                <p className='our-story-p'> Our journey to find the best tequila and create the perfect drink was a thrilling and exciting adventure. It required a deep appreciation for the rich cultural heritage of Mexico and a passion for discovering the finest ingredients. To start, one must visit the heart of tequila country in Jalisco, Mexico, where agave plants are grown and harvested. From there, it's about exploring the different surrounding areas, distilleries and tasting the various styles of tequila, from the smooth and sweet blanco to the bold and complex añejo. As we tried different tequilas, we quickly understood what we wanted to create and then slowly perfected the drink we produce today. Our journey to find the best tequila and create the perfect drink was a journey worth taking.</p>
+                <p className='our-story-p'> Our journey to find the best Tequila and create the perfect drink was a thrilling and exciting adventure. It required a deep appreciation for the rich cultural heritage of Mexico and a passion for discovering the finest ingredients. To start, one must visit the heart of tequila country in Jalisco, Mexico, where agave plants are grown and harvested. From there, it's about exploring the different surrounding areas, distilleries and tasting the various styles of tequila, from the smooth and sweet blanco to the bold and complex añejo. As we tried different tequilas, we quickly understood what we wanted to create and then slowly perfected the drink we produce today. Our journey to find the best tequila and create the perfect drink was a journey worth taking.</p>
 
               </div>
           </div>
