@@ -1,5 +1,5 @@
 #product-page{
-    background-image: url('../Images/agave-fields.jpg');
+    background-image: url('../Images/agave-fields-small.png');
     background-size: cover;
     width: 100vw;
     background-position: bottom;
@@ -8,6 +8,16 @@
     align-items: center;
     overflow-y: scroll;
     position: relative;
+  }
+
+  #product-loaded{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../Images/agave-fields.jpg');
+    background-position: bottom;
+    background-size: cover;
+
   }
 
   #products-container{

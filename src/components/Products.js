@@ -17,6 +17,7 @@ export default function Products() {
   ]
   return (
     <main id='product-page'>
+            <div id='product-loaded'/>
             <div className='gradient'/>
 
       <div id='products-container'>
