@@ -8,7 +8,7 @@ export default function Product({item}) {
       <img className='icon' src={icon} alt='Icon'/>
        <h3 className='product-title'>{item.name}</h3>
        <img className='product-img' src={item.img} alt={item.name} />
-       {/*<button className='product-btn'>Coming Soon</button>*/}
+       <button className='product-btn'>Out of stock</button>
     </div>
   )
 }

@@ -16,7 +16,7 @@ export default function Basket({basketOpen, setBasketOpen}) {
 
             <button className="closebtn" onClick={closeNav}>X</button>
             
-            <h1 style={{fontFamily:'GreenGroveBold'}}>Store coming soon</h1>
+            <h1 style={{fontFamily:'GreenGroveBold'}}>Empty Cart</h1>
 
           <div>
             <p style={{fontFamily:'Gotham'}}>Sign up to our mailing list so we can keep you posted</p>

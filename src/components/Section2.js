@@ -57,10 +57,11 @@ export default function Section2() {
 
       <div id='mobile'>
               {list.map((item, i)=>{
-                return <div key={i} className='wow fadeInUp' data-wow-duration="2s">
+                return <div key={i}// className='wow fadeInUp' data-wow-duration="2s"
+                >
                 <img  className="unclicked" src={item.img} alt={item.name} />
                 <h2 className='product-info-title'>{item.name}</h2>
-                {/*<button className='product-btn' style={{width:"200px"}}>Coming Soon</button>*/}
+                <button className='product-btn' style={{width:"200px"}}>Out of stock</button>
                 <p>{item.desc}</p>
                 </div>
               })}

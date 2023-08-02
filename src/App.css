@@ -111,6 +111,12 @@ nav{
   
 }
 
+#section1{
+  background-image: url('./Images/barrels_small.png');
+  background-position: center;
+  background-size: cover;
+}
+
 
 .navbar1{
   background-color:  rgb(18,18,18, 0.8);
