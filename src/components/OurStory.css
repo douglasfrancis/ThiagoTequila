@@ -8,7 +8,9 @@ video{
 
 #vid-container{
     position: relative;
-
+    background-image: url('../Images/field_small.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .gradient{
