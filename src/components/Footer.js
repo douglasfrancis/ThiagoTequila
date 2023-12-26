@@ -45,6 +45,8 @@ export default function Footer() {
             <p>MEDIA ENQUIRIES</p>
 
         </div>
+
+        <a href='https://www.frantech.org.uk' style={{marginBottom: 20, fontSize: '0.8rem', textDecoration: 'underline'}}>WEBSITE BY FRANTECH</a>
     </footer>
   )
 }
