@@ -46,7 +46,7 @@ export default function Footer() {
 
         </div>
 
-        <a href='https://www.frantech.org.uk' style={{marginBottom: 20, fontSize: '0.8rem', textDecoration: 'underline'}}>WEBSITE BY FRANTECH</a>
+        <a href='https://www.frantech.org.uk' style={{color: 'rgb(18,18,18)',marginBottom: 20, fontSize: '0.8rem', textDecoration: 'underline'}}>WEBSITE BY FRANTECH</a>
     </footer>
   )
 }
