@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
-import cherry from '../Images/cherry_shadow.png'
-import vanilla from '../Images/vanilla_shadow.png'
-import sour from '../Images/sour_reflection.png'
+import cherry from '../Images/cherry_reflection.webp'
+import vanilla from '../Images/vanilla_reflection.webp'
+import sour from '../Images/sour_reflection.webp'
 import transparent from '../Images/logo_transparent.png'
 import './Section2.css'
 

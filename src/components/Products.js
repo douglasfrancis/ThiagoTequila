@@ -1,9 +1,9 @@
 import React from 'react'
 import './Products.css'
 import Product from './Product'
-import cherry from '../Images/cherry.png'
-import vanilla from '../Images/vanilla.png'
-import sour from '../Images/sour.png'
+import cherry from '../Images/cherry.webp'
+import vanilla from '../Images/vanilla.webp'
+import sour from '../Images/sour.webp'
 
 export default function Products() {
 
