@@ -61,7 +61,7 @@ export default function Section2() {
                 >
                 <img  className="unclicked" src={item.img} alt={item.name} />
                 <h2 className='product-info-title'>{item.name}</h2>
-                <button className='product-btn' style={{width:"200px"}}>Coming Soon</button>
+                <button className='product-btn' style={{width:"200px"}}>Out of Stock</button>
                 <p>{item.desc}</p>
                 </div>
               })}
