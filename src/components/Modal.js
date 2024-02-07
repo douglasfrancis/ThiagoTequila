@@ -8,7 +8,7 @@ export default function Modal({setOpen}) {
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
     const [joining, setJoining] = useState(false)
-    const [success, setSuccess] = useState(false)
+    const [success, setSuccess] = useState(true)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -64,7 +64,7 @@ export default function Modal({setOpen}) {
             :
             <div>
 
-                <p style={{color:'white', fontSize: 28, padding: '20px 20px 10px 20px', fontWeight:'bold'}}>You've been added to the waitlist!</p>
+                <p style={{color:'white', fontSize: 28, padding: '20px 20px 10px 20px', fontWeight:'bold', lineHeight: 1.5}}>You've been added to the waitlist!</p>
 
                 <p style={{color:'white', fontSize: 22, padding: '20px 20px 10px 20px'}}>We will be in touch as soon as we have the next batch ready to be shipped</p>
             </div>
