@@ -4,6 +4,7 @@ import vanilla from '../Images/vanilla_reflection.webp'
 import sour from '../Images/sour_reflection.webp'
 import transparent from '../Images/logo_transparent.png'
 import './Section2.css'
+import Modal from './Modal'
 
 let list =[
   //{name: "Blanco", img: blanco, desc: "Introducing our premium Blanco tequila, crafted with the finest blue agave and distilled to perfection. Aged for just a few weeks, this tequila boasts a crisp, clean flavor profile with notes of citrus, vanilla and a hint of spice. Perfect for sipping or mixing in your favorite cocktails, this top-shelf tequila is the ultimate indulgence. Experience the smooth and sophisticated taste of our premium Blanco tequila, available now."},
@@ -16,6 +17,7 @@ let list =[
 
 export default function Section2() {
   const [clicked, setClicked] = useState('Black Cherry')
+  const [open, setOpen] = useState(false)
 
   return (
     <div id='section2'>
@@ -61,11 +63,13 @@ export default function Section2() {
                 >
                 <img  className="unclicked" src={item.img} alt={item.name} />
                 <h2 className='product-info-title'>{item.name}</h2>
-                <button className='product-btn' style={{width:"200px"}}>Out of Stock</button>
+                <button className='product-btn' style={{width:"200px"}} onClick={() => setOpen(true)}>Join the Waitlist</button>
                 <p>{item.desc}</p>
                 </div>
               })}
       </div>
+
+      {open && <Modal setOpen={setOpen}/>}
     </div>
   )
 }

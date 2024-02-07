@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState} from 'react'
 import './Products.css'
+import './Modal.css'
 import Product from './Product'
 import cherry from '../Images/cherry.webp'
 import vanilla from '../Images/vanilla.webp'
 import sour from '../Images/sour.webp'
+import Modal from './Modal'
 
 export default function Products() {
+
+  const [open, setOpen] = useState(false)
 
   let list =[
     //{name: "Blanco", img: blanco, desc: "Introducing our premium Blanco tequila, crafted with the finest blue agave and distilled to perfection. Aged for just a few weeks, this tequila boasts a crisp, clean flavor profile with notes of citrus, vanilla and a hint of spice. Perfect for sipping or mixing in your favorite cocktails, this top-shelf tequila is the ultimate indulgence. Experience the smooth and sophisticated taste of our premium Blanco tequila, available now."},
@@ -22,9 +26,13 @@ export default function Products() {
 
       <div id='products-container'>
           {list.map((item, i)=>{
-            return <Product item={item} key={i} />
+            return <Product item={item} key={i} setOpen={setOpen}/>
           })}
       </div>
+
+      {open &&
+       <Modal setOpen={setOpen}/>
+      }
       
     </main>
   )

@@ -61,15 +61,18 @@
 }
 
 .product-btn{
-  background-color: unset;
-  border: 2px solid white;
-  color: white;
+  background-image: url('../Images/gold-btn.png');
+  background-size: cover;
+  border: unset;
+  border-radius: 3px;
+  color: #1e1e1e;
   font-weight: 400;
   font-family: 'GreenGrove';
   height: 50px;
   width: 100%;
+  max-width: 80vw;
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 
