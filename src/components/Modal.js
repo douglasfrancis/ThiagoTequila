@@ -8,7 +8,7 @@ export default function Modal({setOpen}) {
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
     const [joining, setJoining] = useState(false)
-    const [success, setSuccess] = useState(true)
+    const [success, setSuccess] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
