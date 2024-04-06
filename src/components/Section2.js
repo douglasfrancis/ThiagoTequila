@@ -2,6 +2,8 @@ import React, { useState} from 'react'
 import cherry from '../Images/cherry_reflection.webp'
 import vanilla from '../Images/vanilla_reflection.webp'
 import sour from '../Images/sour_reflection.webp'
+import coffee from '../Images/coffee_shadow.webp'
+
 import transparent from '../Images/logo_transparent.png'
 import './Section2.css'
 import Modal from './Modal'
@@ -12,6 +14,7 @@ let list =[
   {name: "Black Cherry", img: cherry, desc: "Introducing Black Cherry Reposado Tequila, a unique blend of premium tequila and the rich, sweet flavour of ripe black cherries. This one-of-a-kind spirit is perfect for sipping straight or mixing into your favourite cocktails. Each bottle is handcrafted using only the finest blue agave and expertly infused with the essence of juicy black cherries, resulting in a smooth and delicious taste that is sure to satisfy. The deep, dark colour of the tequila perfectly complements the bright, juicy notes of the cherries, making this a visually stunning spirit as well. Whether you're a tequila aficionado or simply love the taste of black cherries, Black Cherry Reposado Tequila is a must-try for anyone looking for a truly exceptional drinking experience. So why wait? Order your bottle today and discover the delicious difference of Black Cherry Reposado Tequila."},
   {name: "Sour", img: sour, desc: "Introducing our sour inspired Reposado Tequila, the perfect blend of traditional Mexican Tequila and bold, aromatic spices. Distilled from 100% blue agave, this Tequila is carefully crafted to provide a smooth and delicious sipping experience. The distinct spices used in our sour Tequila add a depth of flavour that is unmatched by traditional Tequilas. Notes of cinnamon, nutmeg, and clove meld perfectly with the natural sweetness of the agave, creating a unique and irresistible taste. Whether sipping on the rocks or mixed into a cocktail, this Tequila will add a touch of excitement to any drink. It's the perfect addition to any home bar. So why settle for a bland, basic Tequila when you can have our sour Tequila that will take your drinking experience to the next level? Try it today and taste the difference."},
   {name: "Vanilla", img: vanilla, desc: "A perfect blend of rich vanilla flavour and Reposado Tequila. Crafted from 100% pure blue agave and distilled to perfection, our Tequila is rich in flavour and smooth on the palate. The perfect balance of sweetness and smoothness, this Tequila is perfect for sipping on its own, or mixing into your favourite cocktails. Whether you're a fan of classic margaritas or looking for something new, this Tequila is a must-try. Experience the rich, velvety flavour of vanilla with every sip, making this Tequila the perfect addition to your bar collection. Perfect for sipping on a warm summer day, or enjoying with friends and family on special occasions, our Vanilla Reposado Tequila is the choice for any Tequila lover. So why wait? Grab a bottle today and taste the difference!"},
+  {name: "Coffee", img: coffee, desc: "Introducing Thiago Tequila's Premium Coffee Tequila: a harmonious blend of reposado tequila and premium coffee beans. Crafted with care, this smooth and rich fusion offers notes of caramel, vanilla, and oak, complemented by the bold aroma of coffee. Enjoy it neat, on the rocks, or in cocktails for a truly exceptional taste experience. Thiago Tequila's Premium Coffee Tequila - where tradition meets innovation in every sip."},
 
 ]
 
@@ -27,13 +30,16 @@ export default function Section2() {
 
       <div id='desktop'>
           <div id='home-products' className='wow fadeInUp' data-wow-duration="2s">
-            <img className={clicked === "Vanilla"? "clicked": "unclicked"} style={{marginRight:0}} src={vanilla} alt='Vanilla' onClick={()=>setClicked("Vanilla")}/>
+            <img className={clicked === "Vanilla"? "clicked": "unclicked"} style={{marginRight:0}} src={vanilla} alt='Thiago Tequila Vanilla Reposado' onClick={()=>setClicked("Vanilla")}/>
             {//<img className={clicked === "Blanco"? "clicked": "unclicked"} style={{marginRight:0}} src={blanco} alt='Blanco' onClick={()=>setClicked("Blanco")}/>
             }
-            <img className={clicked === "Black Cherry"? "clicked": "unclicked"} src={cherry} alt='Black Cherry' onClick={()=>setClicked("Black Cherry")}/>
+            <img className={clicked === "Black Cherry"? "clicked": "unclicked"} src={cherry} alt='Thiago Tequila Black Cherry Reposado' onClick={()=>setClicked("Black Cherry")}/>
             {//<img className={clicked === "Reposado"? "clicked": "unclicked"} style={{marginLeft:0}} src={reposado} alt='Reposado' onClick={()=>setClicked("Reposado")}/>
             }
-            <img className={clicked === "Sour"? "clicked": "unclicked"} style={{marginLeft:0}} src={sour} alt='Sour' onClick={()=>setClicked("Sour")}/>
+            <img className={clicked === "Sour"? "clicked": "unclicked"} style={{marginLeft:0}} src={sour} alt='Thiago Tequila Sour Reposado' onClick={()=>setClicked("Sour")}/>
+
+            <img className={clicked === "Coffee"? "clicked": "unclicked"} style={{marginLeft:0}} src={coffee} alt='Thiago Tequila Coffee Reposado' onClick={()=>setClicked("Coffee")}/>
+
           </div>
 
         <div  className='wow fadeInUp more-product-info' data-wow-duration="2s">
