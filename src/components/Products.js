@@ -5,6 +5,7 @@ import Product from './Product'
 import cherry from '../Images/cherry.webp'
 import vanilla from '../Images/vanilla.webp'
 import sour from '../Images/sour.webp'
+import coffee from '../Images/coffee.webp'
 import Modal from './Modal'
 
 export default function Products() {
@@ -17,6 +18,7 @@ export default function Products() {
     {name: "Black Cherry", img: cherry, desc: "Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. This tequila is perfect for sipping straight or in a luxurious cocktail. It is made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience."},
     {name: "Vanilla", img: vanilla, desc: "Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. This tequila is perfect for sipping straight or in a luxurious cocktail. It is made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience."},
     {name: "Sour", img: sour, desc: "Introducing the premium Anejo tequila, a masterful blend of only the finest agave plants, matured to perfection in oak barrels. Each sip delivers a smooth, rich and complex flavor profile, with notes of caramel, vanilla, and a hint of spice. This tequila is perfect for sipping straight or in a luxurious cocktail. It is made with meticulous attention to detail and with a passion for traditional distillation techniques, ensuring that each bottle is a true representation of Mexico's tequila-making heritage. Enjoy this premium anejo tequila for a truly elevated and sophisticated drinking experience."},
+    {name: "Coffee", img: coffee, desc: "Introducing Thiago Tequila's Premium Coffee Tequila: a harmonious blend of reposado tequila and premium coffee beans. Crafted with care, this smooth and rich fusion offers notes of caramel, vanilla, and oak, complemented by the bold aroma of coffee. Enjoy it neat, on the rocks, or in cocktails for a truly exceptional taste experience. Thiago Tequila's Premium Coffee Tequila - where tradition meets innovation in every sip."},
 
   ]
   return (
