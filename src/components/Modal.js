@@ -58,7 +58,7 @@ export default function Modal({setOpen}) {
                     
                 </button>
 
-                <p style={{color: '#f1f1f1', fontSize: 11}}>By submitting this form you are consenting for Thiago Tequila to store this data to be used for marketing purposes.</p>
+                <p style={{color: '#f1f1f1', fontSize: 11}}>Your completion of this form indicates your consent for Thiago Tequila to responsibly retain this data for marketing purposes.</p>
             </form>
             </>
             :
