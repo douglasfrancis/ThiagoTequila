@@ -32,7 +32,7 @@ html{
 
 #motto{
   font-family: GreenGroveBold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 200;
   padding: 2rem 3rem;
   text-transform: uppercase;
@@ -43,11 +43,13 @@ html{
 }
 
 #motto-icon{
-  position: absolute;
-  top: -27px;
-  left: calc(50% - 50px);
   z-index: 500;
-  width: 100px;
+  width: 150px;
+}
+
+#flavoured{
+  mix-blend-mode: difference !important;
+  color: #8fa6a2;
 }
 
 h1{

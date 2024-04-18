@@ -18,8 +18,12 @@ export default function Section1() {
     <div id='section1'>
 
         <div className='full-gradient' style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
+          <div>
+            <h1 id='motto'>The <span id='flavoured'>flavoured</span> Tequila company</h1>
+            <img id='motto-icon' src={icon} alt='icon'/>
+            <h1 id='motto'> where tradition meets innovation</h1>
+          </div>
 
-          <h1 id='motto'><img id='motto-icon' src={icon} alt='icon'/>Savour the Spirit of Exquisite Craftsmanship</h1>
 
           <div id='scroll-container'>
            {//<p id='scroll' className={scroll? 'scroll':'scroll-visible'}>Scroll To Explore</p>
