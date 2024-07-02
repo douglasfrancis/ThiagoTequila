@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import './Wholesale.css'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 export default function Wholesale() {
 
@@ -9,31 +10,33 @@ export default function Wholesale() {
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
   //Form validation
+  const [company, setCompany] = useState("")
   const [name, setName] = useState("")
   const [number, setNumber] = useState("")
   const [email, setEmail] = useState("")
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-    if(!name || !number || !email){
-      toast.error("Please add name, email and number")
+    let payload = {
+        company, name, email, number
+    }
+    if(!company || !name || !number || !email){
+      toast.error("Please add all fields")
     } else{
-      setLoading(true)
-      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
-      .then((result) => {
-          console.log(result.text);
+        setLoading(true)
+        axios.post(`${process.env.REACT_APP_API_URL}/thiago/wholesale-enquiry`, payload)
+        .then(() => {
           setSent(true)
           setLoading(false)
           setName("");setEmail("");setNumber("")
-      }, (error) => {
-          console.log(error.text);
+        })
+        .catch(() => {
           setSent(false)
           toast.error("Oops, something went wrong")
-          setLoading(false)
-      });
+          setLoading(false)        })
     }
-  };
+}
 
   return (
     <main id='retail-page'>
@@ -50,8 +53,8 @@ export default function Wholesale() {
           <h2 id='sent-header'>Thanks for getting in touch</h2>
           <p id='sent-p'>We will be in touch with you very soon to further discuss your requirements.</p>
         </div>: 
-        <form ref={form} onSubmit={sendEmail}>
-          <div id='product-checkboxes'>
+        <form ref={form} onSubmit={handleSubmit} style={{paddingTop: 50}}>
+          {/*<div id='product-checkboxes'>
             <div className='checkbox-container'>
                 <input className='checkbox' type="radio" id="Wholesale" name="type" value="Wholesale" />
                 <label htmlFor="Wholesale">Wholesale</label>
@@ -61,7 +64,8 @@ export default function Wholesale() {
                 <label htmlFor="White Label">White Label</label>
               </div>
           </div>
-          <input className='retail-input' placeholder='Company Name' name='Company'/>
+          */}
+          <input className='retail-input' placeholder='Company Name' name='Company' value={company} onChange={(e)=> setCompany(e.target.value)}/>
           <input className='retail-input' placeholder='Contact Name' name='Name' value={name} onChange={(e)=>setName(e.target.value)}/>
           <input className='retail-input' placeholder='Email' name='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
           <input className='retail-input' placeholder='Phone Number' name='Number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
