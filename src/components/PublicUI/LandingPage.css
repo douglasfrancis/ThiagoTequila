@@ -1,0 +1,60 @@
+#landing{
+    background-image: url('../../Assets/agave.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#coming{
+    font-family: 'BigSans';
+    margin: 0;
+    font-size: 164px;
+    color: #80D8D0;
+    
+    
+}
+
+#soon{
+    font-family: 'BigSans';
+    margin: 0;
+    font-size: 164px;
+    color: #FF3F00;
+    
+}
+
+#landing-tagline{
+    color: #B8F500;
+    font-size: 48px;
+    font-family: 'GreenGroveBold';
+    text-transform: uppercase;
+    margin: 10px ;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+    #coming, #soon{
+       
+        font-size: 124px;
+        
+        
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    #coming, #soon{
+        font-size: 17vw;
+    }
+
+    #landing-tagline{
+        font-size: 32px;
+        max-width: 75vw;
+    }
+}

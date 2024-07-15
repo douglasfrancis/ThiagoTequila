@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState,useLayoutEffect} from 'react';
+import React, { useState,useLayoutEffect, useEffect} from 'react';
 import Footer from './components/Footer';
 import cart from './Images/cart.png'
 import logo from './Images/logo.png'
@@ -10,11 +10,90 @@ import SideNav from './components/SideNav';
 import WOW from 'wowjs'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios'
+import {client} from './shopify.js';
+import Navbar from './components/PublicUI/Navbar.js';
 
 function App() {
 
   const location = useLocation();
 
+
+  useEffect(() => {
+    async function getServerSideProps() {
+      const response = await fetch(client.getStorefrontApiUrl(), {
+        body: JSON.stringify({
+          query: GRAPHQL_QUERY,
+        }),
+        // Generate the headers using the private token.
+        headers: client.getPublicTokenHeaders({buyerIp: '...'}),
+        method: 'POST',
+      });
+    
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+    
+      const json = await response.json();
+    
+      return console.log({props: json}) ;
+    }
+    const GRAPHQL_QUERY = `
+    query getProductMedia {
+      products(first: 3) {
+        edges {
+          cursor
+          node {
+            id
+            title
+            description
+            media(first: 10) {
+              edges {
+                node {
+                  mediaContentType
+                  alt
+                  ...mediaFieldsByType
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    fragment mediaFieldsByType on Media {
+      ...on ExternalVideo {
+        id
+        host
+        originUrl
+      }
+      ...on MediaImage {
+        image {
+          url
+        }
+      }
+      ...on Model3d {
+        sources {
+          url
+          mimeType
+          format
+          filesize
+        }
+      }
+      ...on Video {
+        sources {
+          url
+          mimeType
+          format
+          height
+          width
+        }
+      }
+    }
+    `;
+
+    getServerSideProps()
+  }, [])
 
   useLayoutEffect(()=>{
     new WOW.WOW({
@@ -45,41 +124,13 @@ window.addEventListener("scroll", function(e){
   return (
     <div className="App">
       <ToastContainer position='top-center'/>
-      <header className="App-header">
-
-       <nav id='nav' >
-
-          <div className={open ? 'change' : 'container'}  onClick={()=>{  setOpen(!open)}} >
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-              <div className="bar3"></div>
-          </div>
-
-          <div id='nav-items' >
-              <Link to='/products' className={scrolled? 'nav-item1' :'nav-item'} >Products</Link>
-              <Link to='/our-story' className={scrolled? 'nav-item1' :'nav-item'} >Our Story</Link>
-              <Link to='/wholesale' className={scrolled? 'nav-item1' :'nav-item'} >Wholesale</Link>
-          </div>
-
-          <Link to='/' id='logo-container' >
-          <img id='logo' style={open ? {display: 'none'}:{}} src={logo} alt='Thiago logo' />
-          </Link>
-
-          <div >
-            <img id='cart' src={cart} alt='Shopping cart' onClick={()=>setBasketOpen(true)}  />
-          </div>
-        
-       </nav>
-
-       
-      </header>
+      <Navbar />
 
       <Basket basketOpen={basketOpen} setBasketOpen={setBasketOpen} />
       <SideNav open={open} setOpen={setOpen}/>
       
       <Outlet id='main'/>
 
-      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,89 @@
+#header-logo {
+    width: 500px;
+    max-width: 65vw;
+    margin-top: 3vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+#burger {
+    position: absolute;
+    top: 3vh;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.open-menu{
+    top: 4vh !important;
+
+}
+
+.burger-line {
+    height: 7px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+#burger.open-menu .burger-line:nth-child(1) {
+    transform: translateY(-5px) rotate(90deg) scaleX(0.5);
+}
+
+#burger.open-menu .burger-line:nth-child(2) {
+    transform: translateY(-5px);
+}
+
+#burger.open-menu .burger-line:nth-child(3) {
+    transform: translateY(-25px) rotate(90deg) scaleX(0.5);
+}
+
+#burger.open-menu .burger-line:nth-child(4) {
+    position: absolute;
+    transform: translate(-8px, -3px) rotate(45deg) scaleX(0.7);
+    width: 70%;
+    display: block;
+
+}
+
+#burger.open-menu .burger-line:nth-child(5) {
+    position: absolute;
+    transform: translate(8px, -3px) rotate(-45deg) scaleX(0.7);
+    width: 70%;
+    display: block;
+}
+
+#burger .burger-line:nth-child(4), #burger .burger-line:nth-child(5){
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #burger {
+        top: 3vh;
+        left: 2vh;
+        width: 30px;
+        height: 25px;
+    }
+
+    .open-menu{
+        top: 4vh !important;
+    
+    }
+
+    .burger-line {
+        height: 6px;
+       
+    }
+  }

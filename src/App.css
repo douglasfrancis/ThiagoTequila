@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: rgb(18,18,18);
-}
 html{
   padding: 0;
   margin: 0;
@@ -28,6 +25,11 @@ html{
   font-display: fallback;
 }
 
+@font-face {
+  font-family: BigSans;
+  src: url(./fonts/BigSexySans.otf);
+  font-display: fallback;
+}
 
 
 #motto{
@@ -73,22 +75,6 @@ h1{
 main{
   min-height: 90vh;
 }
-
-nav{
-  z-index: 999;
-  position: fixed;
-  width: 100vw;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: center;
-  height: 50px;
-  transition: 1s;
-}
-
-
-
 
 #cart{
   height: 30px;
