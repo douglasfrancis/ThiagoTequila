@@ -1,0 +1,44 @@
+#tradition{
+    background-color: #FB4622;
+    width: 100vw;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tradition-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: end;
+    padding: 3rem;
+    width: 50vw;
+}
+
+
+.tradition-txt{
+    color: white;
+    margin: 10px;
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+    text-align: right;
+    width: 500px;
+}
+
+#tradition-img{
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    width: 50vw;
+    max-width: 700px;
+    border-radius:  2px 0 0 2px;
+    margin: auto 0;
+}
+
+#tradition-header{
+    font-family: 'BigSans';
+    color: #b0f6fa;
+    font-size: 56px;
+    margin: 0;
+    text-align: right;
+}

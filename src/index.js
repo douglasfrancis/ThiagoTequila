@@ -5,19 +5,41 @@ import App from './App';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
-import LandingPage from './components/PublicUI/LandingPage';
+import Homepage from './components/PublicUI/Homepage/Homepage';
+import {CartProvider} from '@shopify/hydrogen-react';
+import {ShopifyProvider} from '@shopify/hydrogen-react';
+import { ProductGlobalContext } from './Context/ProductContext';
+import Products from './components/PublicUI/ProductsPage/Products';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<App />}  >
-            <Route index element={<LandingPage />}/>
-        </Route>
-        <Route path='*' element={<NotFound/>} />
-      </Routes>
+      <ScrollToTop />
+
+      <ShopifyProvider
+        storeDomain={process.env.REACT_APP_PUBLIC_STORE_DOMAIN}
+        storefrontToken={process.env.REACT_APP_PUBLIC_STOREFRONT_API_TOKEN}
+        storefrontApiVersion="2024-07"
+        countryIsoCode="GB"
+        languageIsoCode="EN"
+      >
+
+      <ProductGlobalContext>
+      <CartProvider>
+
+        <Routes>
+          <Route path="/" element={<App />}  >
+              <Route index element={<Homepage />}/>
+              <Route path='products' element={<Products />}/>
+          </Route>
+          <Route path='*' element={<NotFound/>} />
+        </Routes>
+        </CartProvider>
+      </ProductGlobalContext>
+      </ShopifyProvider>
+      
     </BrowserRouter>
   </React.StrictMode>
 );

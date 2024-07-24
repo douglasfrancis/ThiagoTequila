@@ -1,0 +1,36 @@
+#product-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem 1rem 2rem;
+    overflow: hidden;
+}
+
+#the-flavours{
+    font-family: 'DesMontille';
+    color: #77FD78;
+    font-size: 106px;
+    margin: 0;
+    position: relative;
+    top: -55px;
+}
+
+#explore{
+    font-family: 'BigSans';
+    color: #FB4622;
+    font-size: 64px;
+    margin: 0;
+}
+
+#products-nav-desc{
+    width: 650px;
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #313131;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+}

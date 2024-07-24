@@ -1,0 +1,69 @@
+#product-scroller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+#our-txt{
+    font-family: 'DesMontille';
+    color: #FB4622;
+    font-size: 128px;
+    margin: 0;
+}
+
+#product-txt{
+    font-family: 'BigSans';
+    color: #FA72FA;
+    font-size: 64px;
+    margin: 0;
+    position: relative;
+    top: -45px;
+
+}
+
+#products-desc{
+    width: 650px;
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #FB4622;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+}
+
+.product-slider-img{
+    width: 80%;
+}
+
+#product-slider{
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    margin: 2rem auto;
+    width: 95vw;
+    max-width: 1000px;
+}
+
+.product-slider-name{
+    font-family: 'BigSans';
+    color: #FB4622;
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+}
+
+.product-slider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+.product-slider-container:hover{
+    cursor: pointer;
+}
