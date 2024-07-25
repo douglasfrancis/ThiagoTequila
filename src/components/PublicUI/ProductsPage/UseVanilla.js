@@ -20,7 +20,6 @@ function Vanilla() {
   const { linesAdd } = useCart();
   const {setBasketOpen} = useOutletContext();
 
-
   const handleAddToCart = () => {
     try {
       linesAdd([{ merchandiseId: product.node.variants.edges[0].node.id, quantity: 1 }]);
@@ -31,16 +30,19 @@ function Vanilla() {
   };
 
   let lines = product?.node.description.split('Perfect')
-  console.log(lines)
+
+  // Step 1: Convert price string to a number
+  let num = parseFloat(product?.node.priceRange.minVariantPrice.amount);
+
+  // Step 2: Format the number to 2 decimal places
+  let price = num.toFixed(2);
 
   return (
     <>
     <div id='vanilla-product'>
       <div id='vanilla-img-container'>
         <img id='vanilla-img' src={product?.node.images.edges[0].node.src}/>
-
       </div>
-
       <div id='vanilla-description-container'>
         <p id='vanilla-title'>{product?.node.title}</p>
 
@@ -51,10 +53,13 @@ function Vanilla() {
           )
         })}
 
+        <p className='vanilla-description'>£{price}</p>
 
         <button onClick={handleAddToCart} id='vanilla-btn'>
           Pre Order Now
         </button>
+
+        <p style={{fontSize: 12, fontFamily: 'Futura-pt', margin: 0}}>Estimated dispatch date 01st Sept 2024</p>
       </div>
       
       

@@ -7,6 +7,7 @@
     margin: 0 auto;
     font-family: "Futura-PT", sans-serif;
     color: #313131;
+    overflow: hidden;
 }
 .cocktail-img{
     height: 700px;

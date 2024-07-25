@@ -6,6 +6,13 @@ export default function ProductNav( { setProduct } ) {
 
     const { products, loadingProducts } = useProductContext();
 
+    const handleClickScroll = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
   return (
     
     <div id='product-nav'>
@@ -14,7 +21,7 @@ export default function ProductNav( { setProduct } ) {
         <p id='products-nav-desc'>
             Explore our range of daringly delicious, naturally flavoured reposado tequilas. Each bottle is a vibrant adventure for your taste buds, waiting to be unleashed.
         </p>
-        <div id='product-slider'>
+        <div id='product-nav-slider'>
           {loadingProducts ?
 
             <p>Loading...</p>

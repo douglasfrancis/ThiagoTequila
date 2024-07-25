@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductScroller.css'
 import { useProductContext } from '../../../Context/ProductContext'
+import { Link } from 'react-router-dom';
 
 
 export default function ProductScroller() {
@@ -21,11 +22,11 @@ export default function ProductScroller() {
             :
             products.map((product, i) => {
               return (
-                <div key={i} className='product-slider-container'>
+                <Link key={i} className='product-slider-container' to={'products'}  state={{ selection: product.node.title }}>
                   <img className='product-slider-img' src={product.node.images.edges[0].node.src} alt={`Thiago Tequila flavoured with ${product.name}`}/>
                   <p className='product-slider-name'>{product.node.title}</p>
   
-                </div>
+                </Link>
               )
             })
           }
