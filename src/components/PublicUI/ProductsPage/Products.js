@@ -9,10 +9,10 @@ import UseCherry from './UseCherry';
 import UseTamarindo from './UseTamarindo';
 
 // Product IDs
-const vanillaId = "gid://shopify/Product/8297723035938";
-const cherryId = "gid://shopify/Product/8297724346658";
-const tamarindoId = "gid://shopify/Product/8297726181666";
-const coffeeId = "gid://shopify/Product/9407113101602";
+const vanillaId = "gid://shopify/Product/9359166013787";
+const cherryId = "gid://shopify/Product/9359163687259";
+const tamarindoId = "gid://shopify/Product/9359166243163";
+const coffeeId = "gid://shopify/Product/9359166439771";
 
 const ProductList = () => {
   const { products } = useProductContext(); // Fetch your products from context
