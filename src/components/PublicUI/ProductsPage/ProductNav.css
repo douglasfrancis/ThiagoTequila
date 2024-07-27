@@ -1,0 +1,79 @@
+#product-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem 1rem 2rem;
+    
+}
+
+#the-flavours{
+    font-family: 'DesMontille';
+    color: #77FD78;
+    font-size: 106px;
+    margin: 0;
+    position: relative;
+    top: -55px;
+}
+
+#explore{
+    font-family: 'BigSans';
+    color: #FB4622;
+    font-size: 64px;
+    margin: 0;
+}
+
+#products-nav-desc{
+    width: 650px;
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #313131;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+}
+
+#product-nav-slider{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 95vw;
+    max-width: 1000px;
+
+}
+
+@media only screen and (max-width: 850px) {
+    #product-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0 0 0 ;
+    }
+
+    #product-nav-slider{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        width: 95%;
+    
+    }
+
+    #the-flavours{
+        font-family: 'DesMontille';
+        color: #77FD78;
+        font-size: 76px;
+        margin: 0;
+        position: relative;
+        top: -35px;
+    }
+    
+    #explore{
+        font-family: 'BigSans';
+        color: #FB4622;
+        font-size: 36px;
+        margin: 0;
+    }
+  }

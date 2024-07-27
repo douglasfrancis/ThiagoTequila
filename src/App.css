@@ -7,6 +7,38 @@ html{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
+.thiago-btn{
+  background-color: #77FD78;
+  border: unset;
+  color: #FB4622;
+  padding: 10px 20px 5px 20px;
+  font-family: 'GreenGroveBold';
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-decoration: none;
+}
+
+.thiago-btn-purple{
+  background-color: #F472F4;
+  border: unset;
+  color: #fff;
+  padding: 10px 20px 5px 20px;
+  font-family: 'GreenGroveBold';
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-decoration: none;
+}
+
+button:hover, a:hover{
+  cursor: pointer;
+}
+
 @font-face {
   font-family: GreenGrove;
   src: url(./fonts/GreenGroveLight.otf);
@@ -31,315 +63,8 @@ html{
   font-display: fallback;
 }
 
-
-#motto{
-  font-family: GreenGroveBold;
-  font-size: 1.8rem;
-  font-weight: 200;
-  padding: 2rem 3rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  max-width: 90vw;
-  position: relative;
-  z-index: 499;
-}
-
-#motto-icon{
-  z-index: 500;
-  width: 150px;
-}
-
-#flavoured{
-  mix-blend-mode: difference !important;
-  color: #8fa6a2;
-}
-
-h1{
-  font-family: GreenGrove;
-  text-transform: uppercase;
-  font-weight: 400;
-
-}
-
-.product-title{
-  font-family: GreenGrove;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.App {
-  text-align: center;
-}
-
-main{
-  min-height: 90vh;
-}
-
-#cart{
-  height: 30px;
-  float: right;
-
-}
-
-#cart:hover{
-  cursor: pointer;
-}
-
-.cart1{
-  transition: 1s;
-  filter: brightness(0) invert(1);
-
-}
-
-#section1, #section3{
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-  
-}
-
-#section1{
-  background-image: url('./Images/barrels_small.png');
-  background-position: center;
-  background-size: cover;
-}
-
-
-.navbar1{
-  background-color:  rgb(18,18,18, 0.8);
-  transition: 1s;
-  height: 100px;
-}
-
-.logo1{
-  transition: 1s;
-  filter: brightness(0) invert(1);
-  height: 100px !important;
-  z-index: 997;
-  margin: 0 auto;
-  position: relative;
-  top: 0px !important;
-}
-
-#logo{
-  position: relative;
-  top: 4rem;
-  filter: brightness(0) invert(1);
-  height: 175px;
-  transition: 1s;
-  margin: 0 auto;
-}
-
-#logo-container{
-  width: 200px;
-  margin: 0 auto;
-}
-
-#nav-items{
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-}
-.nav-item{
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  font-size: 0.8rem;
-  margin: 0 1rem;
-  transition: 1s;
-  font-family: Gotham;
-  text-decoration: none;
-
-}
-
-.nav-item1{
-
-  transition: 1s;
-  color: white ;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin: 1.5rem 1rem;
-  font-family: Gotham;
-  text-decoration: none;
-}
-.nav-item:hover, .nav-item1:hover{
-  text-decoration: underline;
-}
-
-.scroll-visible{
-  opacity: 1;
-  transition: 0.5s;
-  text-transform: uppercase;
- 
-}
-
-.scroll{
-  opacity: 0;
-  transition: 0.5s;
-  text-transform: uppercase;
-  
-}
-
-#scroll-container{
-  position: absolute;
-  bottom: 3rem;
-  left: 0.5rem;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.background{
-  position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.gradient{
-  background: rgba(18,18,18, 0);
-    background: linear-gradient(180deg, rgba(18,18,18,0) 50%, rgba(18,18,18,1) 100%);
-    background-size: cover;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    color: white;
-    text-align: center;
-}
-
-
-input {
-  max-width: 80vw;
-  width: 400px;
-  margin: 0 auto 1rem auto;
-  background-color: unset;
-  border: 1px solid white;
-  height: 50px;
-  padding: 1rem;
-}
-
-
-.container {
-  display: none;
-}
-
-.change{
-  width: 33%;
-}
-
-
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 2px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-radius: 1px;
-}
-
-.change .bar1 {
-  -webkit-transform: translate(0, 6px) rotate(-45deg);
-  -ms-transform: translate(0, 6px) rotate(-45deg);
-  transform: translate(0, 6px) rotate(-45deg);
-
-}
-
-.change .bar2 {
-  opacity: 0;  
-}
-
-.change .bar3 {
-
-  -webkit-transform: translate(0, -10px) rotate(45deg);
-  -ms-transform: translate(0, -10px) rotate(45deg);
-  transform: translate(0, -10px) rotate(45deg);
-}
-
-.arrow{
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  margin: -20px 0 0 -20px;
-  transform:rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-}
-  
-.arrow:before{
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}
-  
-  
-@keyframes arrow{
-  0%{
-    opacity: 1
-  }
- 
-100%{
-  opacity: 0;
-  transform: translate(-10px, -10px)
-
-}
-  
-}
-
-
-
-#mobile{
-  display: none;
-}
- 
-  
-button:hover{
-  cursor: pointer;
-}
-  
-
-@media only screen and (max-width: 850px) {
-  #nav-items {
-    display: none;
-  }
-  .container {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 999;
-  }
-  #scroll-container{
-    bottom: 120px;
-  }
-  #desktop{
-    display: none;
-  }
-  #mobile{
-    display: block;
-  }
-
-  #section2 p{
-    
-    line-height: 20px;
-  }
+@font-face {
+  font-family: DesMontille;
+  src: url(./fonts/DesMontille.otf);
+  font-display: fallback;
 }

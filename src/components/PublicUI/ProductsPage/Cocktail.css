@@ -1,0 +1,106 @@
+.cocktail{
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: space-evenly;
+    width: 1500px;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: "Futura-PT", sans-serif;
+    color: #313131;
+
+}
+.cocktail-img{
+    height: 700px;
+
+}
+
+.why-not{
+    font-family: 'GreenGroveBold', serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#vanilla-why-not{
+    color: #B094CE;
+}
+
+#tamarindo-why-not, #cherry-why-not, #coffee-why-not{
+    color: #B0F6FA;
+}
+
+.first-name{
+    font-family: 'BigSans', sans-serif;
+    font-size: 56px;
+    margin: 0;
+}
+
+#vanilla-first-name, #coffee-first-name{
+    color: #885A29;
+}
+
+#cherry-first-name{
+    color: #6E2070;
+}
+
+#tamarindo-first-name{
+    color: #FFDF00;
+}
+
+.second-name{
+    font-family: 'DesMontille';
+    font-size: 96px;
+    position: relative;
+    top: -45px;
+    left: 80px;
+    margin: 0;
+}
+
+#vanilla-second-name, #coffee-second-name, #cherry-second-name{
+    color: #F472F4;
+}
+
+#tamarindo-second-name{
+    color: #FB4622;
+}
+
+.info-header{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.ingredient{
+    margin: 0;
+}
+
+.directions{
+    max-width: 500px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cocktail{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .cocktail-img{
+        height: auto;
+        width: 100vw;
+        margin: 0;
+    
+    }
+
+    .second-name{
+        width: 50vw;
+        left: 40px;
+        font-size: 82px;
+    }
+
+    .cocktail-info{
+        width: 100%;
+        padding: 2rem;
+    }
+}

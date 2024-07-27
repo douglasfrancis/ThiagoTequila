@@ -1,0 +1,94 @@
+#tamarindo-product{
+    width: 100vw;
+    height: auto;
+    padding: 3rem;
+    background-color: #FB4622;
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+#tamarindo-img-container{
+    background: rgb(255,255,255);
+    background: linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(241,246,241,1) 100%);
+    width: 600px;
+    max-width: 90vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tamarindo-img{
+    height: 80%;
+}
+
+#tamarindo-title{
+    font-family: 'BigSans', sans-serif;
+    font-size: 64px;
+    color: #fff;
+    margin: 50px 0 0 0;
+}
+
+#tamarindo-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    padding: 0 50px;
+}
+
+#tamarindo-btn{
+    background-color: #ffdf00;
+    border: unset;
+    color: #FB4622;
+    padding: 10px 20px 5px 20px;
+    font-family: 'GreenGroveBold', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+.tamarindo-description{
+    font-family: 'Futura-PT';
+    max-width: 500px;
+    font-size: 20px;
+}
+
+#tamarindo-img-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    #tamarindo-title{
+        font-size: 42px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #tamarindo-img-container{
+        display: none
+    }
+
+    #tamarindo-description-container{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #tamarindo-product{
+        padding: 1rem;
+    }
+
+    .tamarindo-description{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #tamarindo-img-mobile{
+        display: block;
+        width: 50vw;
+        margin: 1rem auto;
+    }
+  }

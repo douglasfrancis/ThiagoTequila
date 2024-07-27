@@ -1,0 +1,62 @@
+
+#product-hero{
+    background-image: url('../../../Assets/products-hero.webp');
+    background-size: cover;
+    background-position: right;
+    width: 100vw;
+    min-height: 700px;
+    height: 80vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#product-hero-header{
+    font-family: 'BigSans', sans-serif;
+    color: #B0F6FA;
+    text-transform: uppercase;
+    font-size: 84px;
+    text-align: left;
+    
+    margin: 0;
+}
+
+#fiesta{
+    color: #77FD78;
+    font-family: 'DesMontille';
+    font-size: 128px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    margin: 0;
+    height: 100px;
+
+}
+
+@media only screen and (max-width: 750px) {
+    #product-hero-header{
+        font-size: 15vw;
+        text-align: center;
+    }
+
+    #product-hero{
+        align-items: center;
+        justify-content:left;
+        background-image: url('../../../Assets/products-hero-mobile.webp');
+        background-position: bottom;
+        padding: 0;
+        padding-top: 110px;
+
+    }
+
+    #fiesta{
+        font-size: 25vw;
+        top: -12vw;
+    }
+
+    #products-learn-more{
+        margin: 0;
+    }
+  }
