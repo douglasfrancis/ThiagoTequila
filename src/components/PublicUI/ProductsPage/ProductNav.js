@@ -25,7 +25,7 @@ export default function ProductNav( { setProduct } ) {
               return (
                 <div key={i} className='product-slider-container' onClick={(e) => setProduct(product.node.title)}>
                   <img className='product-slider-img' src={product.node.images.edges[0].node.src} alt={`Thiago Tequila flavoured with ${product.name}`}/>
-                  <p className='product-slider-name'>{product.node.id === "gid://shopify/Product/8297726181666" ? name[1] :  product.node.title}</p>
+                  <p className='product-slider-name'>{product.node.id === "gid://shopify/Product/9359166243163" ? name[1] :  product.node.title}</p>
   
                 </div>
               )
