@@ -72,7 +72,7 @@ export default function Cocktail({ flavour }) {
 
   return (
     <div className='cocktail'>
-      <div style={{margin: '0 auto'}}>
+      <div style={{margin: '0 auto'}} className='cocktail-info'>
         <p className='why-not' id={`${flavour}-why-not`}>Why not try...</p>
 
         <p className='first-name' id={`${flavour}-first-name`}>{cocktail.firstName}</p>

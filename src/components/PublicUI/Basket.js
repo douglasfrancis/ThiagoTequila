@@ -23,7 +23,7 @@ export default function Basket({basketOpen, setBasketOpen}) {
               <p id='cart-title'>Shopping Cart</p>
               <div className="close-button" onClick={closeNav}></div>
             </div>
-            <div>
+            <div style={{overflow:'scroll'}}>
 
             {lines?.length > 0 ? (
                 lines.map((item, i) => (

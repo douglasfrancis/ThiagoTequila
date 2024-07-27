@@ -20,8 +20,9 @@ const ProductList = () => {
   console.log(state);
 
   const [searchParams, setSearchParams] = useSearchParams();
-  const [product, setProduct] = useState(searchParams.get('product') || (state?.selection) || '');
+  const [product, setProduct] = useState(searchParams.get('product') || (state?.selection) || 'Vanilla');
   const [productData, setProductData] = useState(null);
+  const [userTriggeredScroll, setUserTriggeredScroll] = useState(false); // Track user-triggered scroll
 
   // Refs for each product component
   const vanillaRef = useRef(null);
@@ -59,27 +60,34 @@ const ProductList = () => {
         setProduct(state.selection);
         setSearchParams({ product: state.selection });
         setProductData(selection);
+        setUserTriggeredScroll(true); // Mark as user-triggered scroll
       }
     }
   }, [state, products, setSearchParams]);
 
-  // Scroll to the selected product
+  // Scroll to the selected product only if it's user-triggered
   useEffect(() => {
-    if (productData?.node?.id === vanillaId) {
-      vanillaRef.current?.scrollIntoView({ behavior: 'smooth' });
-    } else if (productData?.node?.id === coffeeId) {
-      coffeeRef.current?.scrollIntoView({ behavior: 'smooth' });
-    } else if (productData?.node?.id === cherryId) {
-      cherryRef.current?.scrollIntoView({ behavior: 'smooth' });
-    } else if (productData?.node?.id === tamarindoId) {
-      tamarindoRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (userTriggeredScroll) {
+      if (productData?.node?.id === vanillaId) {
+        vanillaRef.current?.scrollIntoView({ behavior: 'smooth' });
+      } else if (productData?.node?.id === coffeeId) {
+        coffeeRef.current?.scrollIntoView({ behavior: 'smooth' });
+      } else if (productData?.node?.id === cherryId) {
+        cherryRef.current?.scrollIntoView({ behavior: 'smooth' });
+      } else if (productData?.node?.id === tamarindoId) {
+        tamarindoRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }
+      setUserTriggeredScroll(false); // Reset user-triggered scroll
     }
-  }, [productData]);
+  }, [productData, userTriggeredScroll]);
 
   return (
     <div>
       <ProductHero />
-      <ProductNav setProduct={setProduct} />
+      <ProductNav setProduct={(selectedProduct) => {
+        setProduct(selectedProduct);
+        setUserTriggeredScroll(true); // Mark as user-triggered scroll
+      }} />
 
       <div ref={vanillaRef}>
         {productData?.node?.id === vanillaId && <UseVanilla data={productData} />}
@@ -92,7 +100,7 @@ const ProductList = () => {
       </div>
       <div ref={tamarindoRef}>
         {productData?.node?.id === tamarindoId && <UseTamarindo data={productData} />}
-      </div>
+    </div>
     </div>
   );
 };

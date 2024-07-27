@@ -23,3 +23,17 @@
     margin: 0;
 }
 
+@media only screen and (max-width: 750px) {
+    #hero {
+        align-items: center;
+        padding: 0;
+        background-image: url('../../../Assets/hero-mobile.webp');
+
+    }
+    #hero-txt{
+        text-align: center;
+        font-size: 10vw;
+        max-width: 95vw;
+       
+    }
+  }

@@ -43,3 +43,37 @@
     max-width: 1000px;
 
 }
+
+@media only screen and (max-width: 850px) {
+    #product-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0 0 0 ;
+    }
+
+    #product-nav-slider{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        width: 95%;
+    
+    }
+
+    #the-flavours{
+        font-family: 'DesMontille';
+        color: #77FD78;
+        font-size: 76px;
+        margin: 0;
+        position: relative;
+        top: -35px;
+    }
+    
+    #explore{
+        font-family: 'BigSans';
+        color: #FB4622;
+        font-size: 36px;
+        margin: 0;
+    }
+  }

@@ -49,7 +49,7 @@ export default function Footer() {
     </div>
     </div>
 
-    <p style={{fontSize: '0.6rem', width: '100vw'}}>COPYRIGHT © {new Date().getFullYear()} THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
+    <p style={{fontSize: '0.6rem'}}>COPYRIGHT © {new Date().getFullYear()} THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
 
    
 

@@ -1,7 +1,7 @@
 #header-logo {
     width: 350px;
-    max-width: 65vw;
-    margin: 2vh;
+    max-width: 60vw;
+    margin: 2.5vh 2vh;
 }
 
 nav {
@@ -80,7 +80,11 @@ nav {
     top: -5px;
     margin-right: 10px;
     filter: brightness(0) invert(1);
-  }
+}
+
+#mobile-basket-icon{
+    display: none;
+}
 
   #basket-icon:hover{
     cursor: pointer;
@@ -88,19 +92,28 @@ nav {
 
 @media only screen and (max-width: 600px) {
     #burger {
-        top: 3vh;
-        left: 2vh;
         width: 30px;
         height: 25px;
-    }
-
-    .open-menu{
-        top: 4vh !important;
-    
     }
 
     .burger-line {
         height: 6px;
        
+    }
+
+    #mobile-basket-icon{
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        object-position: center;
+        position: relative;
+        top: -5px;
+        margin-left: 15px;
+        filter: brightness(0) invert(1);
+    }
+
+    #basket-icon{
+        display: none;
     }
   }

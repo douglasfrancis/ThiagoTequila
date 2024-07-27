@@ -21,6 +21,9 @@ export default function FlavourRevolution() {
           Buy Now
         </Link>
       </div>
+
+      <img src={agave} id='revolution-agave-mobile'/>
+
         
     </div>
   )

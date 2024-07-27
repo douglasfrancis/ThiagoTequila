@@ -55,13 +55,15 @@ function Tamarindo() {
           )
         })}
 
+        <img id='cherry-img-mobile' src={product?.node.images.edges[0].node.src}/>
+
         <p className='tamarindo-description'>£{price}</p>
 
         <button onClick={handleAddToCart} id='tamarindo-btn'>
           Pre Order Now
         </button>
 
-        <p style={{fontSize: 12, fontFamily: 'Futura-pt', margin: 0}}>Estimated dispatch date 01st Sept 2024</p>
+        <p style={{fontSize: 12, fontFamily: 'Futura-pt', margin: 0, marginTop: 10}}>Estimated dispatch date 01st Sept 2024</p>
 
       </div>
       

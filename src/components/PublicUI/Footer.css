@@ -78,3 +78,42 @@ footer{
     color: #77FD78;
     font-family: "Futura-pt", sans-serif;
 }
+
+@media only screen and (max-width: 750px) {
+    footer, #footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #socials-container{
+        text-align: center;
+        margin: 1rem ;
+    }
+
+    #footer-logo{
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 40vw;
+    }
+
+    #join-the-party{
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    #footer-form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer-input{
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+
+    }
+    #footer-btn{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+}

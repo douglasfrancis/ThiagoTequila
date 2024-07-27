@@ -36,6 +36,7 @@
     justify-content: baseline;
     align-items: baseline;
     padding: 0 50px;
+    max-width: 70%;
 }
 
 #vanilla-btn{
@@ -46,14 +47,49 @@
     font-family: 'GreenGroveBold', serif;
     font-size: 24px;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin: rem 0;
     text-decoration: none;
 }
 
 .vanilla-description{
     font-family: 'Futura-PT';
-    width: 500px;
-    max-width: 100%;
+    max-width: 500px;
     font-size: 20px;
     color: #313131;
 }
+
+#vanilla-img-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #vanilla-img-container{
+        display: none
+    }
+
+    #vanilla-description-container{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #vanilla-product{
+        padding: 1rem;
+    }
+
+    .vanilla-description{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #vanilla-title{
+        font-size: 48px;
+    }
+
+    #vanilla-img-mobile{
+        display: block;
+        width: 50vw;
+        margin: 1rem auto;
+    }
+  }

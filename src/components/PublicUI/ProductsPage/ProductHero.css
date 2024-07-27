@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: right;
     width: 100vw;
-    min-height: 600px;
+    min-height: 700px;
     height: 80vh;
     padding: 3rem;
     display: flex;
@@ -19,8 +19,7 @@
     text-transform: uppercase;
     font-size: 84px;
     text-align: left;
-    width: 900px;
-    max-width: 80vw;
+    
     margin: 0;
 }
 
@@ -35,3 +34,29 @@
     height: 100px;
 
 }
+
+@media only screen and (max-width: 750px) {
+    #product-hero-header{
+        font-size: 15vw;
+        text-align: center;
+    }
+
+    #product-hero{
+        align-items: center;
+        justify-content:left;
+        background-image: url('../../../Assets/products-hero-mobile.webp');
+        background-position: bottom;
+        padding: 0;
+        padding-top: 110px;
+
+    }
+
+    #fiesta{
+        font-size: 25vw;
+        top: -12vw;
+    }
+
+    #products-learn-more{
+        margin: 0;
+    }
+  }

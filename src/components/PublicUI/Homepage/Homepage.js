@@ -7,10 +7,10 @@ import Tradition from './Tradition'
 export default function Homepage() {
   return (
     <>
-        <Hero />
-        <FlavourRevolution />
-        <ProductScroller/>    
-        <Tradition />
+      <Hero />
+      <FlavourRevolution />
+      <ProductScroller/>    
+      <Tradition />
     </>
   )
 }

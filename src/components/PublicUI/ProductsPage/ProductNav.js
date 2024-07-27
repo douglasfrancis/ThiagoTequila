@@ -6,13 +6,6 @@ export default function ProductNav( { setProduct } ) {
 
     const { products, loadingProducts } = useProductContext();
 
-    const handleClickScroll = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
-
   return (
     
     <div id='product-nav'>
@@ -27,10 +20,12 @@ export default function ProductNav( { setProduct } ) {
             <p>Loading...</p>
             :
             products.map((product, i) => {
+              let name = product.node.title.split(" ")
+
               return (
                 <div key={i} className='product-slider-container' onClick={(e) => setProduct(product.node.title)}>
                   <img className='product-slider-img' src={product.node.images.edges[0].node.src} alt={`Thiago Tequila flavoured with ${product.name}`}/>
-                  <p className='product-slider-name'>{product.node.title}</p>
+                  <p className='product-slider-name'>{product.node.id === "gid://shopify/Product/8297726181666" ? name[1] :  product.node.title}</p>
   
                 </div>
               )

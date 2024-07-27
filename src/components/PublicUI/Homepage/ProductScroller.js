@@ -21,10 +21,12 @@ export default function ProductScroller() {
             <p>Loading...</p>
             :
             products.map((product, i) => {
+              let name = product.node.title.split(" ")
+
               return (
                 <Link key={i} className='product-slider-container' to={'products'}  state={{ selection: product.node.title }}>
                   <img className='product-slider-img' src={product.node.images.edges[0].node.src} alt={`Thiago Tequila flavoured with ${product.name}`}/>
-                  <p className='product-slider-name'>{product.node.title}</p>
+                  <p className='product-slider-name'>{product.node.id === "gid://shopify/Product/8297726181666" ? name[1] :  product.node.title}</p>
   
                 </Link>
               )

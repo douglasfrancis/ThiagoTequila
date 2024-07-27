@@ -54,13 +54,17 @@ function Coffee() {
             <p key={i} className='coffee-description'>{i=== 1 ? `Perfect${line}` : line}</p>
           )
         })}
+
+        <img id='vanilla-img-mobile' src={product?.node.images.edges[0].node.src}/>
+
+
         <p className='coffee-description'>£{price}</p>
 
         <button onClick={handleAddToCart} id='coffee-btn'>
           Pre Order Now
         </button>
 
-        <p style={{fontSize: 12, fontFamily: 'Futura-pt', margin: 0}}>Estimated dispatch date 01st Sept 2024</p>
+        <p style={{fontSize: 12, fontFamily: 'Futura-pt', margin: 0, marginTop: 10}}>Estimated dispatch date 01st Sept 2024</p>
 
       </div>
       

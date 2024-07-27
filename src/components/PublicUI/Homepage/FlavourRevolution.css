@@ -3,6 +3,7 @@
     width: 100vw;
     padding: 4rem 0;
     display: flex;
+    align-items: center;
 }
 
 #revolution-agave{
@@ -13,6 +14,10 @@
     max-width: 700px;
     border-radius: 0 2px 2px 0;
     margin: auto 0;
+}
+
+#revolution-agave-mobile{
+    display: none;
 }
 
 #a-flavour{
@@ -49,3 +54,44 @@
     padding: 3rem;
     width: 50vw;
 }
+
+@media only screen and (max-width: 1000px) {
+    #revolution{
+        font-size: 10vw;
+        top: -40px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #flavour-revolution{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #revolution-agave{
+        display: none;
+    }
+
+    #revolution-agave-mobile{
+        display: block;
+        width: 90vw;
+        height: 100vw;
+        
+    }
+
+    #revolution-container{
+        width: 100vw;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #a-flavour{
+        font-size: 12vw;
+    }
+    
+    #revolution{
+        font-size: 20vw;
+        top: -40px;
+    }
+  }

@@ -23,6 +23,7 @@
     font-size: 20px;
     text-align: right;
     width: 500px;
+    max-width: calc(50vw - 6rem);
 }
 
 #tradition-img{
@@ -41,4 +42,41 @@
     font-size: 56px;
     margin: 0;
     text-align: right;
+}
+
+@media only screen and (max-width: 950px) {
+    #tradition-header{
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #tradition{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tradition-img{
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    #tradition-container{
+      
+        align-items: center;
+        padding: 1rem;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .tradition-txt{
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #tradition-header{
+        font-size: 12vw;
+        text-align: center;
+    }
 }

@@ -12,7 +12,7 @@ export default function ProductHero() {
     <div id='product-hero'>
         <p id='product-hero-header'>Flavour</p>
         <p id='fiesta'>fiesta</p>
-        <button className='thiago-btn-purple' onClick={() => handleClickScroll('product-nav')}>
+        <button id='products-learn-more' className='thiago-btn-purple' onClick={() => handleClickScroll('product-nav')}>
             Learn More
         </button>
     </div>

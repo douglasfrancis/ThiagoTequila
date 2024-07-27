@@ -7,7 +7,7 @@
     margin: 0 auto;
     font-family: "Futura-PT", sans-serif;
     color: #313131;
-    overflow: hidden;
+
 }
 .cocktail-img{
     height: 700px;
@@ -67,6 +67,8 @@
 .info-header{
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .ingredient{
@@ -74,6 +76,31 @@
 }
 
 .directions{
-    width: 500px;
-    max-width: 90vw;
+    max-width: 500px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cocktail{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .cocktail-img{
+        height: auto;
+        width: 100vw;
+        margin: 0;
+    
+    }
+
+    .second-name{
+        width: 50vw;
+        left: 40px;
+        font-size: 82px;
+    }
+
+    .cocktail-info{
+        width: 100%;
+        padding: 2rem;
+    }
 }

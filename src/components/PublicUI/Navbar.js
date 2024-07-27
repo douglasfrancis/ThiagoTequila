@@ -8,6 +8,7 @@ export default function Navbar({ open, setOpen, setBasketOpen }) {
 
   return (
     <nav>
+        <img id='mobile-basket-icon' src={basket} onClick={() => setBasketOpen(true)} />
 
         <Link to={'/'}>
           <img id='header-logo' src={logo} alt='Thiago Tequila UK Flavoured Tequila Logo'/>
