@@ -1,0 +1,13 @@
+.legal{
+    padding: 4rem 3rem ;
+    font-family: 'Futura-pt', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #313131;
+}
+
+.legal li{
+    list-style-type: none;
+    margin: 1rem 0;
+    font-size: 16px;
+}

@@ -10,6 +10,8 @@ import {CartProvider} from '@shopify/hydrogen-react';
 import {ShopifyProvider} from '@shopify/hydrogen-react';
 import { ProductGlobalContext } from './Context/ProductContext';
 import Products from './components/PublicUI/ProductsPage/Products';
+import Terms from './components/PublicUI/Legal/Terms';
+import Privacy from './components/PublicUI/Legal/Privacy';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +35,8 @@ root.render(
           <Route path="/" element={<App />}  >
               <Route index element={<Homepage />}/>
               <Route path='products' element={<Products />}/>
+              <Route path='terms' element={<Terms />}/>
+              <Route path='privacy' element={<Privacy />}/>
           </Route>
           <Route path='*' element={<NotFound/>} />
         </Routes>

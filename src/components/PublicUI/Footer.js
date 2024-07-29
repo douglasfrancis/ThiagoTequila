@@ -5,6 +5,7 @@ import fb from '../../Assets/icons/fb.webp'
 import './Footer.css'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import logo from '../../Assets/blue-logo.webp'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
 
@@ -42,14 +43,14 @@ export default function Footer() {
         <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={tiktok} alt='instagram' /></a>
         <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={fb} alt='instagram' /></a>
         <div id='footer-links'>
-        <p className='footer-link'>PRIVACY POLICY</p>
+          <Link to={'privacy'} className='footer-link'>PRIVACY POLICY</Link>
 
-        <p className='footer-link'>TERMS & CONDITIONS</p>
+          <Link to={'terms'} className='footer-link'>TERMS & CONDITIONS</Link>
+        </div>
+        <p style={{fontSize: '0.6rem'}}>COPYRIGHT © {new Date().getFullYear()} THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
 
     </div>
-    </div>
 
-    <p style={{fontSize: '0.6rem'}}>COPYRIGHT © {new Date().getFullYear()} THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
 
    
 
