@@ -44,8 +44,9 @@ export default function Footer() {
         <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={fb} alt='instagram' /></a>
         <div id='footer-links'>
           <Link to={'privacy'} className='footer-link'>PRIVACY POLICY</Link>
-
           <Link to={'terms'} className='footer-link'>TERMS & CONDITIONS</Link>
+          <Link to={'customer-service'} className='footer-link'>CUSTOMER SERVICE</Link>
+
         </div>
         <p style={{fontSize: '0.6rem'}}>COPYRIGHT © {new Date().getFullYear()} THIAGO TEQUILA CO. YOU MUST BE 21 OR OLDER TO CONSUME ALCOHOL. PLEASE DRINK RESPONSIBLY.</p>
 

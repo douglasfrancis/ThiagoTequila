@@ -1,0 +1,94 @@
+#customer-service-agave{
+    width: 45vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#customer-service-container{
+    background-color: #fb4622;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 55vw;
+    overflow: scroll;
+    padding: 100px 2rem 2rem 2rem;
+    font-family: 'Futura-pt', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#customer-service-container p{
+    max-width: 500px;
+    margin: 1rem 0;
+}
+
+.customer-input{
+    width: 100%;
+    height: 56px;
+    border: unset;
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'GreenGroveBold', serif;
+    color: #fb6422;
+    font-size: 26px;
+    margin-right: 10px;
+    padding-top: 15px;
+}   
+
+.customer-input::placeholder{
+    text-transform: uppercase;
+    font-family: 'GreenGroveBold', serif;
+    color: #fb6422;
+    font-size: 26px;
+    padding-top: 15px;
+}
+
+#customer-textarea{
+    resize: none;
+    height: 150px;
+    padding-top: 0;
+}
+
+#customer-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 500px;
+}
+
+#were-here{
+    font-family: 'BigSans', sans-serif;
+    font-size: 56px;
+    margin: 0;
+    color: #77FD78;
+    font-weight: 500;
+}
+
+#to-help{
+    font-family: 'DesMontille';
+    font-size: 96px;
+    position: relative;
+    top: -45px;
+    left: 80px;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+#customer-submit-btn{
+    height: 48px;
+    background-color: #B0F6FA;
+    color: #fb4622;
+    font-family: 'GreenGroveBold', serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    border: unset;
+    margin: 10px auto;
+    width: 50%;
+    padding-top: 5px;
+}
