@@ -64,7 +64,8 @@ export default function CustomerService() {
             </>
             }
 
-            
+          <img id='customer-service-agave-mobile' src={agave} alt='Thiago Tequila customer service'/>
+
 
         </div>
 
