@@ -12,6 +12,7 @@ import { ProductGlobalContext } from './Context/ProductContext';
 import Products from './components/PublicUI/ProductsPage/Products';
 import Terms from './components/PublicUI/Legal/Terms';
 import Privacy from './components/PublicUI/Legal/Privacy';
+import CustomerService from './components/PublicUI/CustomerService';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -37,6 +38,7 @@ root.render(
               <Route path='products' element={<Products />}/>
               <Route path='terms' element={<Terms />}/>
               <Route path='privacy' element={<Privacy />}/>
+              <Route path='customer-service' element={<CustomerService />}/>
           </Route>
           <Route path='*' element={<NotFound/>} />
         </Routes>
