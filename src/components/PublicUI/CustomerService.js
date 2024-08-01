@@ -9,6 +9,7 @@ export default function CustomerService() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [msg, setMsg] = useState("")
+  const [subject, setSubject] = useState("")
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
 
@@ -19,7 +20,7 @@ export default function CustomerService() {
       alert("Please add all fields")
     } else {
       setSending(true)
-      axios.post(`${process.env.REACT_APP_API_URL}/thiago/customer-service-request`, {name, email, msg, resolved: false})
+      axios.post(`${process.env.REACT_APP_API_URL}/thiago/customer-service-request`, {name, email, subject, msg, resolved: false})
       .then((res) => {
         setSent(true)
       })
@@ -58,6 +59,7 @@ export default function CustomerService() {
               <form id='customer-form'>
                   <input placeholder='Your name' className='customer-input' value={name} onChange={(e) => setName(e.target.value)}/>
                   <input placeholder='Your email' className='customer-input' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                  <input placeholder='Subject  ' className='customer-input' value={subject} onChange={(e) => setSubject(e.target.value)}/>
                   <textarea  placeholder='Message' className='customer-input' id='customer-textarea' value={msg} onChange={(e) => setMsg(e.target.value)}/>
                   <button id='customer-submit-btn' onClick={handleSubmit}>{sending ? 'Sending' : 'Submit'}</button>
               </form>
