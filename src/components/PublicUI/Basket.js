@@ -19,7 +19,7 @@ export default function Basket({basketOpen, setBasketOpen}) {
 
           <div style={{ width: '95%', overflow:'scroll'}}>
             <div style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-              <img src={basket} style={{height: 40, width: 40, objectFit: 'contain', marginBottom: 10}}/>
+              <img src={basket} style={{height: 30, width: 30, objectFit: 'contain', marginBottom: 10}}/>
               <p id='cart-title'>Shopping Cart</p>
               <div className="close-button" onClick={closeNav}></div>
             </div>
