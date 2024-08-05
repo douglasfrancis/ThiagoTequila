@@ -20,7 +20,7 @@ export default function Navbar({ open, setOpen, setBasketOpen }) {
             id='header-logo'
             src={logo} 
             alt='Thiago Tequila UK Flavoured Tequila Logo'
-            style={(pathname === '/terms' || pathname === '/privacy') ? {filter: 'invert(1)'}: {}}
+            style={(pathname === '/policies/terms-of-service' || pathname === '/policies/privacy-policy') ? {filter: 'invert(1)'}: {}}
           />
         </Link>
 

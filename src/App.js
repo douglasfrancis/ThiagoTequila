@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/PublicUI/Navbar.js';
 import Footer from './components/PublicUI/Footer.js';
+import BarTab from './components/PublicUI/BarTab.js';
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
       <SideNav open={open} setOpen={setOpen}/>
       
       <Outlet id='main' context={{setBasketOpen}}/>
+
+      {/*<BarTab />*/}
       <Footer />
 
     </div>
