@@ -8,12 +8,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/PublicUI/Navbar.js';
 import Footer from './components/PublicUI/Footer.js';
 import BarTab from './components/PublicUI/BarTab.js';
+import TagManager from 'react-gtm-module'
+import ReactGA from "react-ga4";
 
 function App() {
 
   const [basketOpen, setBasketOpen] = useState(false)
   const [open, setOpen] = useState(false)
 
+  const tagManagerArgs = {
+    gtmId: 'GTM-NC78HQH3'
+  }
+  //Google analytics and tag manager
+  TagManager.initialize(tagManagerArgs)
+  ReactGA.initialize("G-VNPYXFJNVR");
 
   return (
     <div className="App">
