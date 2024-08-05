@@ -43,8 +43,8 @@ export default function Footer() {
         <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={tiktok} alt='instagram' /></a>
         <a href='https://www.facebook.com/profile.php?id=100087116185778' target='_blank'><img className='social-icon' src={fb} alt='instagram' /></a>
         <div id='footer-links'>
-          <Link to={'privacy'} className='footer-link'>PRIVACY POLICY</Link>
-          <Link to={'terms'} className='footer-link'>TERMS & CONDITIONS</Link>
+          <Link to={'/policies/privacy-policy'} className='footer-link'>PRIVACY POLICY</Link>
+          <Link to={'/policies/terms-of-service'} className='footer-link'>TERMS & CONDITIONS</Link>
           <Link to={'customer-service'} className='footer-link'>CUSTOMER SERVICE</Link>
 
         </div>
