@@ -96,12 +96,18 @@
         padding: 1rem;
     }
     #trade h1{
-        font-size: 28px;
+        font-size: 6vw;
     }
 
     #trade-overlay{
         
         background-color: rgba(17,17,17, 0.3);    
     
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    #trade{
+        padding: 4rem 1rem;
     }
   }
