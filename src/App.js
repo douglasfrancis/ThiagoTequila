@@ -33,7 +33,7 @@ function App() {
       
       <Outlet id='main' context={{setBasketOpen}}/>
 
-      {/*<BarTab />*/}
+      <BarTab />
       <Footer />
 
     </div>

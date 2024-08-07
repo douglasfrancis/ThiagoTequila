@@ -7,8 +7,8 @@ export default function SideNav({open, setOpen}) {
     <div id='sideNav' className={open ? 'nav-open': 'nav-closed'}>
         <Link to='/' className='' onClick={()=>setOpen(false)}>Home</Link>
         <Link to='/products' className='' onClick={()=>setOpen(false)}>Products</Link>
-        {/*<Link to='/our-story' className='' onClick={()=>setOpen(false)}>Our Story</Link>
-        <Link to='/wholesale' className='' onClick={()=>setOpen(false)}>Wholesale</Link>*/}
+        <Link to='/trade' className='' onClick={()=>setOpen(false)}>Trade</Link>
+        {/*<Link to='/wholesale' className='' onClick={()=>setOpen(false)}>Wholesale</Link>*/}
 
     </div>
   )

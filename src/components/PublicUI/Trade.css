@@ -1,0 +1,98 @@
+#trade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-image: url('../../Assets/trade.webp');
+    height: 100vh;
+    min-height: 800px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    font-family: 'Futura-pt', sans-serif;
+    position: relative;
+}
+
+#trade-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17,17,17, 0.2);
+    z-index: 2;
+
+
+}
+
+#trade h1{
+    font-family: 'BigSans', sans-serif;
+    font-weight: 500;
+}
+
+#trade-container-left{
+    width: 50vw;
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 2rem;
+    z-index: 3;
+    font-size: 18px;
+}
+
+#trade-container-left h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#trade-form{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+    z-index: 3;
+    font-size: 18px;
+
+}
+
+.trade-signup-input{
+    margin: 10px 0;
+    height: 48px;
+    font-family: 'Futura-pt', sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#trade-signup-txt-area{
+    margin: 10px 0;
+    height: 82px;
+    font-family: 'Futura-pt', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+}
+
+#submit-trade-btn{
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(17,17,17, 0.6);
+    font-family: 'Futura-pt', sans-serif;
+    width: 150px;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 750) {
+    #trade{
+        
+        background-position: left;
+    }
+  }

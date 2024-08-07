@@ -80,7 +80,7 @@ export default function Basket({basketOpen, setBasketOpen}) {
 
               <div style={{display: 'flex', justifyContent:'space-between', padding: '0 1rem'}}>
                 <p className='basket-grand-total'>Total</p>
-                <p className='basket-grand-total'>£{parseFloat(cost?.totalAmount.amount).toFixed(2)}</p>
+                <p className='basket-grand-total'>£{!cost?.totalAmount.amount ? "0.00" : parseFloat(cost?.totalAmount.amount).toFixed(2)}</p>
               </div>
               <a href={checkoutUrl} id='checkout-btn'>Checkout</a>
 

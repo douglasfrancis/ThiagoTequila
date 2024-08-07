@@ -82,7 +82,7 @@ const ProductList = () => {
   }, [productData, userTriggeredScroll]);
 
   return (
-    <div>
+    <div style={{backgroundColor:'#fff'}}>
       <ProductHero />
       <ProductNav setProduct={(selectedProduct) => {
         setProduct(selectedProduct);
