@@ -15,7 +15,7 @@ export default function Tradition() {
           <p className='tradition-txt'>Our journey starts in the heart of Jalisco, Mexico, where the finest blue agave basks under the Mexican sun. We use traditional methods to create a smooth, premium reposado tequila, then infuse it with naturally sourced flavours that shatter expectations.</p>
 
           <Link className='thiago-btn' to={'products'}>
-              Buy Now
+            Pre Order Now
           </Link>
         </div>
 

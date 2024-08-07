@@ -85,6 +85,11 @@ footer{
     flex-direction: column;
 }
 
+#socials-container{
+    text-align: right;
+    margin: 1rem ;
+}
+
 @media only screen and (max-width: 750px) {
     footer, #footer-container {
         flex-direction: column;

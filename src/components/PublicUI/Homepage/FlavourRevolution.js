@@ -18,7 +18,7 @@ export default function FlavourRevolution() {
         <p className='revolution-txt'>Forget the burn, forget the lime – this is tequila reinvented, bursting with vibrant taste that's perfect for kicking off good times and unforgettable memories.</p>
 
         <Link className='thiago-btn' to={'/products'}>
-          Buy Now
+          Pre Order Now
         </Link>
       </div>
 
