@@ -49,7 +49,7 @@ export default function Privacy() {
         <h2>Your Rights</h2>
 
         <p>
-            You have the right to access, update, and delete your personal information. You may also have the right to restrict or object to certain types of data processing. To exercise these rights, please contact us via <Link to={'customer-service'}>Customer Services</Link>.
+            You have the right to access, update, and delete your personal information. You may also have the right to restrict or object to certain types of data processing. To exercise these rights, please contact us via <Link to={'/customer-service'}>Customer Services</Link>.
         </p>
         <h2>Changes to This Privacy Policy</h2>
 
@@ -59,7 +59,7 @@ export default function Privacy() {
         <h2>Contact Us</h2>
 
         <p>
-            If you have any questions about this Privacy Policy, please contact us via <Link to={'customer-service'}>Customer Services</Link>.
+            If you have any questions about this Privacy Policy, please contact us via <Link to={'/customer-service'}>Customer Services</Link>.
         </p>
     </div>
   )
