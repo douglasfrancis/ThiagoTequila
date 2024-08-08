@@ -77,7 +77,7 @@ export default function Terms() {
         <h2>Contact Us</h2>
 
         <p>
-            If you have any questions about these Terms, please contact us via <Link to={'customer-service'}>Customer Services</Link>.
+            If you have any questions about these Terms, please contact us via <Link to={'/customer-service'}>Customer Services</Link>.
         </p>
     </div>
   )
